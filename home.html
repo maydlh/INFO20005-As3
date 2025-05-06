@@ -5,39 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="compoments.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#framing">Framing</a></li>
+            <li><a href="#contact">Contact</a></li>   
+        </ul>
+        <img src="./assets/logo-icon.png" alt="The Alchemist Logo" id="logo1"> 
+        <div class="nav-icons">
+            <img src="./assets/profile.svg" alt="Profile" id="profile-icon"> 
+            <img src="./assets/heart.svg" alt="Wishlist" id="heart-icon">
+            <img src="./assets/search.svg" alt="Search" id="search-icon"> 
+            <img src="./assets/cart.svg" alt="Shopping Bag" id="bag-icon"> 
+        </div>
+    </nav>
+    
     <header>
-        <nav class="top-nav">
-            <!-- Placeholder for logo -->
-            <img src="../logo-icon.png" alt="The Alchemist Logo" id="logo1"> 
-            <ul>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#framing">Framing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-icons">
-                <!-- Placeholders for icons -->
-                <img src="images/search-icon.svg" alt="Search" id="search-icon"> 
-                <img src="images/bag-icon.svg" alt="Shopping Bag" id="bag-icon"> 
-                <img src="./assets/heart.svg" alt="Wishlist" id="heart-icon">
-                <img src="images/profile-icon.svg" alt="Profile" id="profile-icon"> 
-            </div>
-        </nav>
+        <div class="hero">
+            <img src="./assets/logo-full.png" alt="the Alchemist"> 
+            <!-- hero background image -->
+            <img src="./assets/home1.png" alt="" id="hero-bg"> 
+            <!-- pattern image -->
+            <img src="./assets/star-pattern-1.png" alt="" id="pattern"> 
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <!-- Placeholder for hero background image -->
-            <img src="images/home1-background.png" alt="" id="hero-bg"> 
-            <!-- Placeholder for pattern image -->
-            <img src="images/alchemist-pattern1.png" alt="" id="hero-pattern"> 
-        </section>
-
         <section class="about">
-             <!-- Placeholder for logo -->
-            <img src="images/logo-white-3.png" alt="The Alchemist Logo" id="logo3"> 
             <p class="intro">
                 The Alchemist is a small and independent art shop, born out of a passion for art supplies. We pride ourselves on our exceptional range of carefully selected artist materials.
             </p>
@@ -48,12 +48,11 @@
                 <br><br>
                 Our picture framing offers contemporary style with museum quality at affordable prices. We believe not only in the presentation of an artwork, but equally in the preservation of the artwork.
             </p>
-             <!-- Placeholder for grey pattern background -->
-             <img src="images/alchemist-pattern-grey.png" alt="" id="about-pattern-bg"> 
         </section>
     </main>
 
     <footer>
+        <img src="./assets/star-pattern-default.png"> 
         <div class="footer-content">
             <div class="footer-nav">
                 <h4>Navigation</h4>
@@ -66,35 +65,43 @@
             </div>
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <ul>
-                    <li>
-                        <!-- Placeholder for phone icon -->
-                        <img src="images/phone-icon.svg" alt="" id="phone-icon"> 
-                        03 9740 9984
-                    </li>
-                    <li>
-                        <!-- Placeholder for envelope icon -->
-                        <img src="images/envelope-icon.svg" alt="" id="envelope-icon"> 
-                        info@thealchemist.net.au
-                    </li>
-                    <li>
-                        <!-- Placeholder for location icon -->
-                        <img src="images/location-icon.svg" alt="" id="location-icon"> 
-                        104 Mollison St, Kyneton 3444
-                    </li>
-                    <li>
-                        <!-- Placeholder for clock icon -->
-                        <img src="images/clock-icon.svg" alt="" id="clock-icon"> 
-                        Tue-Fri 10am-5pm
-                    </li>
-                     <li>Sat 10am-2pm</li>
-                </ul>
+                <div class="contact-info-container">
+                    <div class="contact-info-online">
+                        <ul>
+                            <li>
+                            <!-- Placeholder for phone icon -->
+                            <img src="./assets/phone.svg" alt="" id="phone-icon"> 
+                            03 9740 9984
+                            </li>
+                            <li>
+                            <!-- Placeholder for envelope icon -->
+                            <img src="./assets/mail.svg" alt="" id="envelope-icon"> 
+                            info@thealchemist.net.au
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="contact-info-store">
+                        <ul>
+                            <li>
+                            <!-- Placeholder for location icon -->
+                            <img src="./assets/location.svg" alt="" id="location-icon"> 
+                            104 Mollison St, Kyneton 3444
+                            </li>
+                            <li>
+                            <!-- Placeholder for clock icon -->
+                            <img src="./assets/clock.svg" alt="" id="clock-icon"> 
+                            Tue-Fri 10am-5pm
+                            </li>
+                            <li>Sat 10am-2pm</li>
+                        </ul> 
+                    </div> 
+                </div>
+                
             </div>
         </div>
-        <div class="footer-bottom">
-             <!-- Placeholder for logo -->
-             <img src="images/logo-white-1-footer.png" alt="The Alchemist Logo" id="logo-footer"> 
-            <p><a href="#terms">Website Terms & Conditions</a></p>
+        <div class="footer-logo">
+             <img src="./assets/logo-icon.png" alt="The Alchemist Logo" id="logo-footer"> 
+            <p><a>Website Terms & Conditions</a></p>
         </div>
     </footer>
 </body>

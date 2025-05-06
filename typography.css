@@ -1,0 +1,23 @@
+@import url("https://use.typekit.net/bna7cwg.css");
+@import url("https://use.typekit.net/bna7cwg.css");
+
+:root{
+    --font-primary: "effra-light", sans-serif;
+    --font-secondary: "Barteldes-small", sans-serif;
+    --font-tertiary: "effra", sans-serif;
+  
+    --font-size-xs: 15px;
+    --font-size-reg: 20px;
+    --font-size-lg: 25px
+}
+
+body{
+    font-family: var(--font-primary);
+    font-size: var(--font-size-reg)
+}
+
+h1 {
+  
+  }
+
+  
