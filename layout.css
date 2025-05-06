@@ -46,3 +46,14 @@ nav > div > img{  /* Blue */
     height:24px;
 }
   
+
+/* putting logo on top of image and dimming image */
+
+img {
+    filter: brightness(50%);
+  }
+
+.header-background{
+    position: relative;
+    
+}
