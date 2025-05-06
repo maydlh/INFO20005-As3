@@ -79,6 +79,7 @@ nav > div > img{  /* Blue */
   .pattern{
     max-width: 30vw;
     margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
   }
 
 
@@ -93,7 +94,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6vh;
+    margin-top: 2vh;
     margin-bottom: 6vh;
 }
 
@@ -108,11 +109,41 @@ section.about > p.heading{
 /*footer*/
 .footer-content{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 2fr 1fr;
-    grid-area: "navigation" "contact1" "contact2" "blank" "footer-logo" ;
-    align-items: center;
+    grid-template-columns:1fr 2.5fr 2fr 1fr;
+    grid-template-areas: "navigation contact blank footer-logo" ;
+    align-items: top;
     gap: 10px;
-    padding: var(--space-unit-2);
+    padding: 3vw;
 }
 
+.footer-nav{
+    grid-area: navigation;
+}
 
+.footer-contact{
+    grid-area: contact;
+}
+
+.footer-logo{
+    grid-area: footer-logo;
+    text-align: center;
+}
+
+.footer-logo > img{
+    width: 100%;
+    max-width: 86px;
+    margin-bottom: 2vh;
+}
+
+.contact-info-container{
+    gap: 50px;
+    align-items: flex-start;
+}
+
+footer li, footer p{
+    margin-bottom: 2vh  ;
+}
+
+footer nth-child(1){
+    background-colo
+}

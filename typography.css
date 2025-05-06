@@ -40,3 +40,13 @@ nav > ul{
     line-height: 1.5;
 }
 
+/*footer*/
+footer{
+    font-family: var(--font-tertiary);
+    font-size: var(--font-size-xs);
+}
+
+footer li, footer a{
+    font-family: var(--font-primary);
+}
+
