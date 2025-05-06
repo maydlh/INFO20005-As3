@@ -9,6 +9,7 @@
     --font-size-xs: 15px;
     --font-size-reg: 20px;
     --font-size-lg: 25px;
+    --font-size-xl: 30px;
 
     --font-weight-reg: 400;
     --font-weight-semibold: 700;
@@ -23,6 +24,19 @@ body{
 nav > ul{       
     font-family: var(--font-secondary);
     font-size: var(--font-size-reg);
-  }
+}
 
-  
+/*about section for the home page */
+
+.heading{                               /*can be used in other instances*/
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+}
+
+.details{                               /*can be used in other instances*/
+    font-family: var(--font-primary);
+    font-size: var(--font-size-reg);
+    line-height: 1.5;
+}
+
