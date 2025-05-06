@@ -8,16 +8,22 @@
   
     --font-size-xs: 15px;
     --font-size-reg: 20px;
-    --font-size-lg: 25px
+    --font-size-lg: 25px;
+
+    --font-weight-reg: 400;
+    --font-weight-semibold: 700;
 }
+
 
 body{
     font-family: var(--font-primary);
     font-size: var(--font-size-reg)
 }
 
-h1 {
-  
+nav > ul{       
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-reg);
+    
   }
 
   

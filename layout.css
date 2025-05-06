@@ -1,5 +1,48 @@
 :root{
    --space-unit: 1em;
+   --space-unit-2: 2em;
+
 
 }
 
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*navigation*/
+nav {          
+    height:77px;
+    padding-left: var(--space-unit-2);
+    padding-right: var(--space-unit-2);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav > ul{        
+    gap: 50px;
+}
+
+nav > img{        
+   width: auto; 
+   height: auto;
+   max-width: 67.78px;
+   max-height: 59.94px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+nav > div{   
+    height: 76px;
+    width: 194px;
+  }
+
+nav > div > img{  /* Blue */
+    height:24px;
+}
+  
