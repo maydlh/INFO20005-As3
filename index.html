@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Watercolour</title>
+    <!-- Link to home.css is kept for when CSS is added later, but no CSS will be generated now -->
+    <link rel="stylesheet" href="home.css">
+    <!-- We can add icon library links here later, e.g., Font Awesome -->
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+            <a href="#">Menu</a> / <a href="#">Shop</a> / <a href="#">Painting</a> / Watercolour
+        </nav>
+
+        <header class="page-header">
+            <h1>All Watercolour</h1>
+            <div class="sort-by">
+                <select name="sort" id="sort-select">
+                    <option value="default">Sort by</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+        </header>
+
+        <main class="content-area">
+            <!-- Sidebar for Filters -->
+            <aside class="sidebar">
+                <div class="filter-header">
+                    <h2>Filter</h2>
+                    <span class="filter-icon"> <!-- Placeholder for filter icon --> </span>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-toggle">Brand <span class="toggle-icon">-</span></button>
+                    <div class="filter-options open">
+                        <label><input type="checkbox" checked> Daniel Smith</label>
+                        <label><input type="checkbox"> Sennelier</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-toggle">Type <span class="toggle-icon">+</span></button>
+                    <div class="filter-options">
+                        <!-- Add type options here -->
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-toggle">Size <span class="toggle-icon">+</span></button>
+                    <div class="filter-options">
+                        <!-- Add size options here -->
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-toggle">Colour <span class="toggle-icon">+</span></button>
+                    <div class="filter-options">
+                        <!-- Add colour options here -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <section class="product-grid">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="Watercolour Ground Titanium White 118ml">
+                    <span class="product-brand">Daniel Smith</span>
+                    <h3 class="product-name">Watercolour Ground Titanium White 118ml</h3>
+                    <p class="product-price">$23.40</p>
+                    <button class="add-to-cart-btn">
+                        + <!-- Placeholder for plus icon -->
+                        <span class="cart-icon"> <!-- Placeholder for cart icon --> </span>
+                    </button>
+                    <button class="wishlist-btn"> <!-- Placeholder for heart icon --> </button>
+                </div>
+
+                <!-- Product Item 2 -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="Watercolour Ground Titanium White 473ml">
+                     <span class="product-brand">Daniel Smith</span>
+                    <h3 class="product-name">Watercolour Ground Titanium White 473ml</h3>
+                    <p class="product-price">$41.20</p>
+                     <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+
+                <!-- Product Item 3 -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="Watercolour Ground Iridescent Gold 118ml">
+                    <span class="product-brand">Daniel Smith</span>
+                    <h3 class="product-name">Watercolour Ground Iridescent Gold 118ml</h3>
+                    <p class="product-price">$23.40</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+                
+                <!-- Product Item 4 (Back Soon) -->
+                <div class="product-item">
+                    <div class="image-container">
+                        <img src="placeholder_product.png" alt="Primary Mixing Set">
+                        <span class="back-soon-overlay">BACK SOON</span>
+                    </div>
+                    <span class="product-brand">Daniel Smith</span>
+                    <h3 class="product-name">Primary Mixing Set</h3>
+                    <p class="product-price">$102.95</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+                
+                <!-- Product Item 5: French Ochre -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="French Ochre 5ml tube">
+                    <span class="product-brand">Daniel Smith</span>
+                    <h3 class="product-name">French Ochre 5ml tube</h3>
+                    <p class="product-price">$16.45</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+
+                <!-- Product Item 6: Nickel Titanate Yellow -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="Nickel Titanate Yellow 15ml tube">
+                    <span class="product-brand">Daniel Smith</span>
+                    <h3 class="product-name">Nickel Titanate Yellow 15ml tube</h3>
+                    <p class="product-price">$24.95</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+                
+                <!-- Product Item 7: La Petite Aquarelle Wooden Box Set -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="La Petite Aquarelle Wooden Box Set">
+                    <span class="product-brand">Sennelier</span>
+                    <h3 class="product-name">La Petite Aquarelle Wooden Box Set</h3>
+                    <p class="product-price">$76.95</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+
+                <!-- Product Item 8: 1/2 Pan Watercolour Cadmium Red Purple -->
+                 <div class="product-item">
+                    <img src="placeholder_product.png" alt="1/2 Pan Watercolour Cadmium Red Purple 611">
+                    <span class="product-brand">Sennelier</span>
+                    <h3 class="product-name">1/2 Pan Watercolour Cadmium Red Purple 611</h3>
+                    <p class="product-price">$16.45</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+
+                <!-- Product Item 9: La Petite Aquarelle Watercolour Travel Set -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="La Petite Aquarelle Watercolour Travel Set">
+                    <span class="product-brand">Sennelier</span>
+                    <h3 class="product-name">La Petite Aquarelle Watercolour Travel Set</h3>
+                    <p class="product-price">$54.95</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+                
+                <!-- Product Item 10: 1/2 Pan Watercolour Titanium White 116 -->
+                <div class="product-item">
+                    <img src="placeholder_product.png" alt="1/2 Pan Watercolour Titanium White 116">
+                    <span class="product-brand">Sennelier</span>
+                    <h3 class="product-name">1/2 Pan Watercolour Titanium White 116</h3>
+                    <p class="product-price">$12.05</p>
+                    <button class="add-to-cart-btn">
+                        + <span class="cart-icon"></span>
+                    </button>
+                    <button class="wishlist-btn"></button>
+                </div>
+
+            </section>
+        </main>
+        
+        <div class="pagination">
+            <!-- Placeholder for pagination dots/diamonds -->
+            <span>&#x2022;</span> <!-- dot -->
+            <span>&#x2726;</span> <!-- diamond -->
+            <span>&#x2022;</span>
+            <span>&#x2726;</span>
+            <span>&#x2022;</span>
+            <span>&#x2726;</span>
+            <span>&#x2022;</span>
+        </div>
+
+    </div> <!-- end .container -->
+
+</body>
+</html>
