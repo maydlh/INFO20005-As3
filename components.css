@@ -1,5 +1,15 @@
 /*use -- modifier for each type of button */
 
-.menu-button{
-    
+
+.menu-item, .menu-item :hover, .menu-item :active{
+    color: var(--color-tertiary); 
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-reg);    
 }
+
+.menu-item :hover, .menu-item :active{
+    color: var(--color-secondary); 
+}
+
+
+

@@ -22,11 +22,6 @@ body{
     font-size: var(--font-size-reg)
 }
 
-nav > ul{       
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-reg);
-}
-
 /*about section for the home page */
 
 .heading{                               /*can be used in other instances*/
