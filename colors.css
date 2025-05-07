@@ -13,6 +13,9 @@ body{
 nav, .footer-content{
     background-color: var(--color-primary);
 }
+nav.breadcrumbs{
+    background-color: transparent;
+}
 
 
 li > a{

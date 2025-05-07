@@ -92,7 +92,7 @@ section.about{
     max-width: 800px; /* Max width for alignment */
 }
 
-main{
+main.home{
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -117,6 +117,7 @@ section.about > p.heading{
     align-items: top;
     gap: 10px;
     padding: 3vw;
+    white-space: nowrap;
 }
 
 .footer-nav{
