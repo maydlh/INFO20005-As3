@@ -155,3 +155,26 @@ footer li, footer p{
 .footer-icon{
     margin-right: 5px;
 }
+
+/* product listing page */
+
+.announcement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.announcement-message{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+
+
+/*.browse-container{
+    display: grid;
+    grid-template-columns:1fr 2.5fr 2fr 1fr;
+    grid-template-areas: "navigation contact blank footer-logo" ;
+} */

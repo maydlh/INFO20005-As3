@@ -31,21 +31,23 @@
     </nav>
 
         <!-- announcement -->
-      <div class="announcement ">
-        <img src="./assets/delivery.svg">
-        <p>Free shipping for orders over $100</p>
-        <button>
+      <div class="announcement">
+        <div class="announcement-message">
+            <img src="./assets/delivery.svg">
+            <p>Free shipping for orders over $100</p>
+        </div>
+        <button class="btn btn-primary">
             <img src="./assets/cross-white.svg" alt="dismiss message">
         </button>
       </div>
-      
-    <div class="browse-container">
-        <!-- website path -->
+       <!-- website path -->
         <nav class="breadcrumbs">
             <a href="#">Menu</a> / <a href="#">Shop</a> / <a href="#">Painting</a> / Watercolour
         </nav>
+
+    <div class="browse-container">
         <!-- heading and filter -->
-        <header class="browse-header">
+        <header class="browse-header flexrow">
             <h1>All Watercolour</h1>
             <div class="sort-by">
                 <select name="sort" id="sort-select">
@@ -60,31 +62,31 @@
 
         <main class="browse-main"> <!--will flex this horizontally-->
             <!-- Sidebar for Filters -->
-            <aside class="browse-sidebar">
+            <aside class="browse__sidebar">
                 <div class="filter-header">
                     <h2 class="browse">Filter</h2>
                     <span class="filter-icon"> <img src="./assets/filter.svg"> </span>
                 </div>
-                <div class="filter-group">
+                <div class="filter__group">
                     <button class="filter-toggle">Brand <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
                     <!-- <div class="filter-options open">
                         <label><input type="checkbox"> Daniel Smith</label>
                         <label><input type="checkbox"> Sennelier</label>
                     </div> -->
                 </div>
-                <div class="filter-group">
+                <div class="filter__group">
                     <button class="filter-toggle">Type <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
                     <div class="filter-options">
                         <!-- Add type options here -->
                     </div>
                 </div>
-                <div class="filter-group">
+                <div class="filter__group">
                     <button class="filter-toggle">Size <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
                     <div class="filter-options">
                         <!-- Add size options here -->
                     </div>
                 </div>
-                <div class="filter-group">
+                <div class="filter__group">
                     <button class="filter-toggle">Colour <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
                     <div class="filter-options">
                         <!-- Add colour options here, none? -->

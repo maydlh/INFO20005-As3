@@ -11,7 +11,17 @@
     color: var(--color-secondary); 
 }
 
+.btn{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
 
-
-
+.btn-primary{
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    border: 0;
+}
 
