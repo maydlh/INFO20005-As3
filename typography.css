@@ -6,6 +6,7 @@
     --font-secondary: "Barteldes-small", sans-serif;
     --font-tertiary: "effra", sans-serif;
   
+    --font-size-xxs: 10px;
     --font-size-xs: 15px;
     --font-size-reg: 20px;
     --font-size-lg: 25px;
@@ -48,5 +49,10 @@ footer{
 
 footer li, footer a{
     font-family: var(--font-primary);
+}
+
+.footer-terms{
+    font-size: var(--font-size-xxs);
+    text-decoration: underline;
 }
 

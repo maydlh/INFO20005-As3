@@ -144,6 +144,10 @@ footer li, footer p{
     margin-bottom: 2vh  ;
 }
 
-footer nth-child(1){
-    background-colo
+.footer-indent{
+    text-indent: 20px;
+}
+
+.footer-icon{
+    margin-right: 5px;
 }

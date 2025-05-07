@@ -10,7 +10,7 @@
 body{
     color: #190A02;
 }
-nav, footer{
+nav, .footer-content{
     background-color: var(--color-primary);
 }
 
@@ -23,5 +23,6 @@ li > a{
 footer{
     color: var(--color-tertiary);
 }
+
 
 
