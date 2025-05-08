@@ -158,6 +158,10 @@ footer li, footer p{
 
 /* product listing page */
 
+.breadcrumbs{
+    padding-top: 1.5vw;
+}
+
 .announcement{
     display: flex;
     justify-content: space-between;
@@ -178,3 +182,9 @@ footer li, footer p{
     grid-template-columns:1fr 2.5fr 2fr 1fr;
     grid-template-areas: "navigation contact blank footer-logo" ;
 } */
+
+.browse-main{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}

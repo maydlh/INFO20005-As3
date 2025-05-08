@@ -51,3 +51,14 @@ footer li, footer a{
     text-decoration: underline;
 }
 
+/*product browsing */
+nav.breadcrumbs > a{
+    text-decoration: none;
+}
+
+nav.breadcrumbs{
+    font-size: var(--font-size-xs);
+}
+
+
+    
