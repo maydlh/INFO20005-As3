@@ -31,7 +31,7 @@
     </nav>
 
         <!-- announcement -->
-      <div class="announcement">
+    <div class="announcement">
         <div class="announcement-message">
             <img src="./assets/delivery.svg">
             <p>Free shipping for orders over $100</p>
@@ -39,28 +39,15 @@
         <button class="btn btn-primary">
             <img src="./assets/cross-white.svg" alt="dismiss message">
         </button>
-      </div>
-       <!-- website path -->
-        <nav class="breadcrumbs">
-            <a href="#">Menu</a> / <a href="#">Shop</a> / <a href="#">Painting</a> / <span>Watercolour</span>
-        </nav>
-
+    </div>
+    <!-- website path -->
+    <nav class="breadcrumbs">
+        <a href="#">Menu</a> / <a href="#">Shop</a> / <a href="#">Painting</a> / <span>Watercolour</span>
+    </nav>
+    
     <div class="browse-container">
-        <!-- heading and filter -->
-        <header class="browse-header flexrow">
-            <h1>All Watercolour</h1>
-            <div class="sort-by">
-                <select name="sort" id="sort-select">
-                    <option value="default">Sort by</option>
-                    <option value="price-asc">Price: Low to High</option>
-                    <option value="price-desc">Price: High to Low</option>
-                    <option value="name-asc">Name: A to Z</option>
-                    <option value="name-desc">Name: Z to A</option>
-                </select>
-            </div>
-        </header>
-
-        <main class="browse-main"> 
+    
+        <main class="browse-main">
             <!-- Sidebar for Filters -->
             <aside class="browse__sidebar">
                 <div class="filter-header">
@@ -68,234 +55,263 @@
                     <span class="filter-icon"> <img src="./assets/filter.svg"> </span>
                 </div>
                 <div class="filter__group">
-                    <button class="filter-toggle">Brand <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
+                    <button class="filter-toggle">Brand <span class="toggle-icon"><img src="./assets/add.svg"
+                                alt="expand"></span></button>
                     <!-- <div class="filter-options open">
-                        <label><input type="checkbox"> Daniel Smith</label>
-                        <label><input type="checkbox"> Sennelier</label>
-                    </div> -->
+                            <label><input type="checkbox"> Daniel Smith</label>
+                            <label><input type="checkbox"> Sennelier</label>
+                        </div> -->
                 </div>
                 <div class="filter__group">
-                    <button class="filter-toggle">Type <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
+                    <button class="filter-toggle">Type <span class="toggle-icon"><img src="./assets/add.svg"
+                                alt="expand"></span></button>
                     <div class="filter-options">
                         <!-- Add type options here -->
                     </div>
                 </div>
                 <div class="filter__group">
-                    <button class="filter-toggle">Size <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
+                    <button class="filter-toggle">Size <span class="toggle-icon"><img src="./assets/add.svg"
+                                alt="expand"></span></button>
                     <div class="filter-options">
                         <!-- Add size options here -->
                     </div>
                 </div>
                 <div class="filter__group">
-                    <button class="filter-toggle">Colour <span class="toggle-icon"><img src="./assets/add.svg" alt="expand"></span></button>
+                    <button class="filter-toggle">Colour <span class="toggle-icon"><img src="./assets/add.svg"
+                                alt="expand"></span></button>
                     <div class="filter-options">
                         <!-- Add colour options here, none? -->
                     </div>
                 </div>
             </aside>
-
-            <!-- Product Grid -->
-            <section class="product-grid">
-                <!-- Product Item 1 -->
-                <div class="product-item">
-                    <img src="./assets/ds-ground118.jpg" alt="Watercolour Ground Titanium White 118ml">
-                    <div><!--flex row this-->
-                        <p class="product-brand">Daniel Smith</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
+    
+            <section class="product">
+                <!-- heading and filter -->
+                <header class="browse-header flexrow">
+                    <h1>All Watercolour</h1>
+                    <div class="sort-by">
+                        <select name="sort" id="sort-select">
+                            <option value="default">Sort by</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="name-asc">Name: A to Z</option>
+                            <option value="name-desc">Name: Z to A</option>
+                        </select>
                     </div>
-                    <h3 class="product-name">Watercolour Ground</h3>
-                    <h3 class="product-quality">Titanium White 118ml</h3>
-                    <div> <!--flex row this-->
-                        <p class="product-price">$23.40</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
+                </header>
+                <!-- Product Grid -->
+                <section class="product-grid">
+                    <!-- Product Item 1 -->
+                    <div class="product-item">
+                        <img src="./assets/ds-ground118.jpg" alt="Watercolour Ground Titanium White 118ml" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Daniel Smith</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">Watercolour Ground</h3>
+                        <h3 class="product-quality">Titanium White 118ml</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$23.40</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Product Item 2 -->
-                <div class="product-item">
-                    <img src="./assets/ds-ground473.jpg" alt="Watercolour Ground Titanium White 473ml">
-                    <div>
-                        <p class="product-brand">Daniel Smith</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
+    
+                    <!-- Product Item 2 -->
+                    <div class="product-item">
+                        <img src="./assets/ds-ground473.jpg" alt="Watercolour Ground Titanium White 473ml" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Daniel Smith</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">Watercolour Ground</h3>
+                        <h3 class="product-quality">Titanium White 473ml</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$41.20</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"></span>
+                            </button>
+                        </div>
+    
                     </div>
-                    <h3 class="product-name">Watercolour Ground</h3>
-                    <h3 class="product-quality">Titanium White 473ml</h3>
-                    <div>
-                        <p class="product-price">$41.20</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"></span>
-                        </button>
+    
+                    <!-- Product Item 3 -->
+                    <div class="product-item">
+                        <img src="./assets/ds-ground-gold.jpg" alt="Watercolour Ground Iridescent Gold 118ml" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Daniel Smith</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">Watercolour Ground</h3>
+                        <h3 class="product-quality">Iridescent Gold 118ml</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$23.40</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    
-                </div>
-
-                <!-- Product Item 3 -->
-                <div class="product-item">
-                    <img src="./assets/ds-ground-gold.jpg" alt="Watercolour Ground Iridescent Gold 118ml">
-                    <div>
-                        <p class="product-brand">Daniel Smith</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
+    
+                    <!-- Product Item 4 (Back Soon) -->
+                    <div class="product-item">
+                        <div class="image-container product-unavailiable">
+                            <img src="./assets/ds-mixing-set.jpg" alt="Primary Mixing Set" class="product-image">
+                            <div class="back-soon-overlay"><span>BACK SOON</span></div>
+                        </div>
+                        <div class="flexrow">
+                            <p class="product-brand">Daniel Smith</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">Primary Mixing Set</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$102.95</p>
+                            <button class="add-to-cart-btn" disabled>
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    <h3 class="product-name">Watercolour Ground</h3>
-                    <h3 class="product-quality">Iridescent Gold 118ml</h3>
-                    <div>
-                        <p class="product-price">$23.40</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
+    
+                    <!-- Product Item 5: French Ochre -->
+                    <div class="product-item">
+                        <img src="./assets/ds-ochre-tube.jpg" alt="French Ochre 5ml tube" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Daniel Smith</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">French Ochre</h3>
+                        <h3 class="product-quality">5ml tube</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$16.45</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    
-                </div>
-                
-                <!-- Product Item 4 (Back Soon) -->
-                <div class="product-item">
-                    <div class="image-container">
-                        <img src="./assets/ds-mixing-set.jpg" alt="Primary Mixing Set">
-                        <span class="back-soon-overlay">BACK SOON</span>
+    
+                    <!-- Product Item 6: Nickel Titanate Yellow -->
+                    <div class="product-item">
+                        <img src="./assets/ds-nickel-tube.jpg" alt="Nickel Titanate Yellow 15ml tube" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Daniel Smith</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">Nickel Titanate</h3>
+                        <h3 class="product-quality">Yellow 15ml tube</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$24.95</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    <div>
-                        <p class="product-brand">Daniel Smith</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
+    
+                    <!-- Product Item 7: La Petite Aquarelle Wooden Box Set -->
+                    <div class="product-item">
+                        <img src="./assets/s-set.jpg" alt="La Petite Aquarelle Wooden Box Set" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Sennelier</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">La Petite Aquarelle</h3>
+                        <h3 class="product-quality">Wooden Box Set</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$76.95</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    <h3 class="product-name">Primary Mixing Set</h3>
-                    <div>
-                        <p class="product-price">$102.95</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
+    
+                    <!-- Product Item 8: 1/2 Pan Watercolour Cadmium Red Purple -->
+                    <div class="product-item">
+                        <img src="./assets/s-half-pan-611.jpg" alt="1/2 Pan Watercolour Cadmium Red Purple 611" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Sennelier</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">1/2 Pan Watercolour</h3>
+                        <h3 class="product-quality">Cadmium Red Purple 611</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$16.45</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    
-                </div>
-                
-                <!-- Product Item 5: French Ochre -->
-                <div class="product-item">
-                    <img src="./assets/ds-ochre-tube.jpg" alt="French Ochre 5ml tube">
-                    <div>
-                        <p class="product-brand">Daniel Smith</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
+    
+                    <!-- Product Item 9: La Petite Aquarelle Watercolour Travel Set -->
+                    <div class="product-item">
+                        <img src="./assets/s travel set.jpg" alt="La Petite Aquarelle Watercolour Travel Set" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Sennelier</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">La Petite Aquarelle</h3>
+                        <h3 class="product-quality">Watercolour Travel Set</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$54.95</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    <h3 class="product-name">French Ochre</h3>
-                    <h3 class="product-quality">5ml tube</h3>
-                    <div>
-                        <p class="product-price">$16.45</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
+    
+                    <!-- Product Item 10: 1/2 Pan Watercolour Titanium White 116 -->
+                    <div class="product-item">
+                        <img src="./assets/s-half-pan-116.jpg" alt="1/2 Pan Watercolour Titanium White 116" class="product-image">
+                        <div class="flexrow">
+                            <p class="product-brand">Sennelier</p>
+                            <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                            </button>
+                        </div>
+                        <h3 class="product-name">1/2 Pan Watercolour</h3>
+                        <h3 class="product-quality">Titanium White 116</h3>
+                        <div class="flexrow">
+                            <p class="product-price">$12.05</p>
+                            <button class="add-to-cart-btn">
+                                <img src="./assets/add-white.svg" alt="add to cart">
+                                <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                            </button>
+                        </div>
+    
                     </div>
-                    
-                </div>
-
-                <!-- Product Item 6: Nickel Titanate Yellow -->
-                <div class="product-item">
-                    <img src="./assets/ds-nickel-tube.jpg" alt="Nickel Titanate Yellow 15ml tube">
-                    <div>
-                        <p class="product-brand">Daniel Smith</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>  
-                    </div>
-                    <h3 class="product-name">Nickel Titanate</h3>
-                    <h3 class="product-quality">Yellow 15ml tube</h3>
-                    <div>
-                        <p class="product-price">$24.95</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
-                    </div>
-                    
-                </div>
-                
-                <!-- Product Item 7: La Petite Aquarelle Wooden Box Set -->
-                <div class="product-item">
-                    <img src="./assets/s-set.jpg" alt="La Petite Aquarelle Wooden Box Set">
-                    <div>
-                        <p class="product-brand">Sennelier</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
-                    </div>
-                    <h3 class="product-name">La Petite Aquarelle</h3>
-                    <h3 class="product-quality">Wooden Box Set</h3>
-                    <div>
-                        <p class="product-price">$76.95</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
-                    </div>
-                    
-                </div>
-
-                <!-- Product Item 8: 1/2 Pan Watercolour Cadmium Red Purple -->
-                 <div class="product-item">
-                    <img src="./assets/s-half-pan-611.jpg" alt="1/2 Pan Watercolour Cadmium Red Purple 611">
-                    <div>
-                        <p class="product-brand">Sennelier</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
-                    </div>
-                    <h3 class="product-name">1/2 Pan Watercolour</h3>
-                    <h3 class="product-quality">Cadmium Red Purple 611</h3>
-                    <div>
-                        <p class="product-price">$16.45</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
-                    </div>
-                    
-                </div>
-
-                <!-- Product Item 9: La Petite Aquarelle Watercolour Travel Set -->
-                <div class="product-item">
-                    <img src="./assets/s travel set.jpg" alt="La Petite Aquarelle Watercolour Travel Set">
-                    <div>
-                        <p class="product-brand">Sennelier</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
-                    </div>
-                    <h3 class="product-name">La Petite Aquarelle</h3>
-                    <h3 class="product-quality">Watercolour Travel Set</h3>
-                    <div>
-                        <p class="product-price">$54.95</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
-                    </div>
-                    
-                </div>
-                
-                <!-- Product Item 10: 1/2 Pan Watercolour Titanium White 116 -->
-                <div class="product-item">
-                    <img src="./assets/s-half-pan-116.jpg" alt="1/2 Pan Watercolour Titanium White 116">
-                    <div>
-                        <p class="product-brand">Sennelier</p>
-                        <button class="wishlist-btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist"> </button>
-                    </div>
-                    <h3 class="product-name">1/2 Pan Watercolour</h3>
-                    <h3 class="product-quality">Titanium White 116</h3>
-                    <div>
-                        <p class="product-price">$12.05</p>
-                        <button class="add-to-cart-btn">
-                            <img src="./assets/add-white.svg" alt="add to cart">
-                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
-                        </button>
-                    </div>
-                    
-                </div>
-
+    
+                </section>
             </section>
         </main>
-
+    
     </div> <!-- end .container -->
-
+    
     <!--Footer-->
     <footer>
         <div class="footer-image flexcolumn">
-            <img src="./assets/star-pattern-default.png" class="pattern"> 
+            <img src="./assets/star-pattern-default.png" class="pattern">
         </div>
         <div class="footer-content">
             <div class="footer-nav">
@@ -313,35 +329,36 @@
                     <div class="contact-info-online">
                         <ul>
                             <li>
-                            <img src="./assets/phone.svg" class="footer-icon"> 
-                            03 9740 9984
+                                <img src="./assets/phone.svg" class="footer-icon">
+                                03 9740 9984
                             </li>
                             <li>
-                            <img src="./assets/mail.svg" class="footer-icon"> 
-                            info@thealchemist.net.au
-                            </li> 
+                                <img src="./assets/mail.svg" class="footer-icon">
+                                info@thealchemist.net.au
+                            </li>
                         </ul>
                     </div>
                     <div class="contact-info-store">
                         <ul>
                             <li>
-                            <img src="./assets/location.svg" class="footer-icon"> 
-                            104 Mollison St, Kyneton 3444
+                                <img src="./assets/location.svg" class="footer-icon">
+                                104 Mollison St, Kyneton 3444
                             </li>
                             <li>
-                            <img src="./assets/clock.svg" class="footer-icon"> 
-                            Tue-Fri 10am-5pm
-                            </li>   
+                                <img src="./assets/clock.svg" class="footer-icon">
+                                Tue-Fri 10am-5pm
+                            </li>
                             <li class="footer-indent">Sat 10am-2pm</li>
-                        </ul> 
-                    </div> 
-                </div> 
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="footer-logo">
-                <img src="./assets/logo-icon.png" > 
+                <img src="./assets/logo-icon.png">
                 <p><a class="footer-terms">Website Terms & Conditions</a></p>
             </div>
         </div>
     </footer>
-</body>
-</html>
+    </body>
+    
+    </html>

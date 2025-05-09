@@ -31,6 +31,7 @@ footer{
 
 .announcement{
     background-color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 nav.breadcrumbs, nav.breadcrumbs > a{
@@ -41,4 +42,7 @@ nav.breadcrumbs > span {
     color: var(--color-primary);
 }
 
-
+.back-soon-overlay{
+    color: white;
+    background-color: rgba(233, 157, 43, 0.9);
+}   

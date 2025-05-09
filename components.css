@@ -11,17 +11,37 @@
     color: var(--color-secondary); 
 }
 
-.btn{
+.btn{                       /*reset the button style*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
     box-sizing: border-box;
     transition: all 0.2s;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
-.btn-primary{
+.btn-primary{               /*pink background and white-pink content*/
     background-color: var(--color-secondary);
     color: var(--color-tertiary);
     border: 0;
 }
 
+.btn-primary-inverse{
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    border: 0;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid var(--color-grey);
+  background-color: var(--color-grey-light);
+  color: var(--color-grey);
+}
+/*change svg to pink*/
+filter: invert(15%) sepia(86%) saturate(3367%) hue-rotate(329deg) brightness(94%) contrast(100%);
