@@ -22,6 +22,12 @@ body{
     font-size: var(--font-size-reg)
 }
 
+/*nav bar*/
+
+.nav-cart>span{
+    font-family: var(--font-tertiary);
+}
+
 /*about section for the home page */
 
 .heading{                               /*can be used in other instances*/

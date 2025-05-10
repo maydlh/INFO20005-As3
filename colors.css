@@ -16,7 +16,9 @@ nav, .footer-content{
 nav.breadcrumbs{
     background-color: transparent;
 }
-
+#cart-item-number{
+    background-color: var(--color-secondary);
+}
 
 li > a{
     text-decoration: none;
