@@ -80,3 +80,8 @@ nav.breadcrumbs{
     font-family: var(--font-tertiary),sans-serif;
     font-size: var(--font-size-reg);
 }
+
+.product-price{
+    font-family: var(--font-tertiary),sans-serif;
+    font-size: 28px;
+}
