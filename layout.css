@@ -176,14 +176,9 @@ footer li, footer p{
     margin: 0 auto;
 }
 
-
-
-/*.browse-container{
-    display: grid;
-    grid-template-columns:1fr 2.5fr 2fr 1fr;
-    grid-template-areas: "navigation contact blank footer-logo" ;
-} */
-
+.browse-header{
+    margin-bottom: var(--space-unit-2);
+}
 .browse-main{
     display: flex;
     gap: 10px;
