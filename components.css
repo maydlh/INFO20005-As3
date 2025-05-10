@@ -66,3 +66,13 @@ div.sort-by > select{
     appearance: none;
     text-align: center;
 }
+
+.filter-toggle{
+    font-family: var(--font-secondary), sans-serif;
+    font-size: var(--font-size-reg);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding-top: var(--space-unit);
+    width: 90%;
+}

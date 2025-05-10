@@ -187,6 +187,7 @@ footer li, footer p{
 
 .browse__sidebar{
     min-width: 20vw;
+    padding-left: 2vw;
 }
 
 .filter-header{
