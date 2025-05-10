@@ -1,6 +1,7 @@
 :root{
    --space-unit: 1em;
    --space-unit-2: 2em;
+   --space-unit-half: 0.5em;
 
 
 }
@@ -235,4 +236,15 @@ width: 215px;
     text-align: center;
     width: 100%;
     padding: 5px;
+}
+.product-brand{
+    margin-bottom: var(--space-unit-half);
+}
+
+.product-name{
+    margin-bottom: var(--space-unit);
+}
+
+.product-name :first-child {
+    margin-bottom: 0.3em;
 }
