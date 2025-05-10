@@ -218,7 +218,7 @@ div.filter-header > .filter-icon{
     margin-top: 2vh;
 }
 
-.product-grid{
+.product-grid, .item-related-products-row{
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-unit-2);

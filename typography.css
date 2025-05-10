@@ -63,7 +63,7 @@ footer li, footer a{
    font-size: var(--font-size-reg);
 }
 
-nav.breadcrumbs > a{
+nav.breadcrumbs > a, div.item-nav-row > a{
     text-decoration: none;
 }
 

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watercolour Ground Titanium White 118ml</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="./assets/logo-icon-inverse.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="components.css">
 </head>
 <body>
      <!--nav bar-->
@@ -28,10 +33,16 @@
             
         </div>
     </nav>
-    <div class="item-container">
+
+    <!-- website path -->
+    <nav class="breadcrumbs">
+        <a href="#">Menu</a> / <a href="#">Shop</a> / <a href="#">Painting</a> / <a>Watercolour</a>/ <span>Item</span>
+    </nav>
+
+    <main class="item-container">
         <!-- Back and Next Links -->
-        <div class="item-nav-row">
-            <a href="#" class="item-back">&lt;Back</a>
+        <div class="item-nav-row flexrow">
+            <a href="#" class="item-back">&lt;Back</a> <!--set this to take back to he browsing page-->
             <a href="#" class="item-next">Next&gt;</a>
         </div>
 
@@ -39,8 +50,8 @@
         <div class="item-main-section">
             <!-- Product Image -->
             <div class="item-image-area">
-                <img src="placeholder_product.png" alt="Watercolour Ground Titanium White 118ml" class="item-main-image">
-                <span class="item-zoom-icon">🔍</span>
+                <img src="./assets/ds-ground118.jpg" alt="Watercolour Ground Titanium White 118ml" class="item-main-image">
+                <span class="item-zoom-icon"><img src="./assets/zoom.svg" alt="zoom in"></span>
             </div>
             <!-- Product Info -->
             <div class="item-info-area">
@@ -48,16 +59,16 @@
                 <h1 class="item-title">Watercolour Ground Titanium White 118ml</h1>
                 <div class="item-price">$23.40</div>
                 <div class="item-actions-row">
-                    <div class="item-qty-selector">
-                        <button>-</button>
+                    <div class="item-qty-selector"> <!--style this-->
+                        <button class="btn"><img src="./assets/minus-grey.svg" alt=""></button>
                         <span>1</span>
-                        <button>+</button>
+                        <button class="btn"><img src="./assets/plus-grey.svg" alt=""></button>
                     </div>
                     <span class="item-stock">Stock count: 3</span>
-                    <button class="item-wishlist-btn">♡</button>
+                    <button class="item-wishlist-btn btn"><img src="./assets/heart-dark.svg" alt=""></button>
                 </div>
-                <button class="item-add-to-cart-btn">
-                    <span class="cart-icon">🛒</span> ADD TO CART
+                <button class="item-add-to-cart-btn btn">
+                    <span class="cart-icon"><img src="./assets/cart-white.svg" alt=""></span> ADD TO CART
                 </button>
             </div>
         </div>
@@ -74,63 +85,140 @@
         <!-- Related Products Section -->
         <section class="item-related-section">
             <h2 class="item-related-title">Related Products</h2>
-            <div class="item-related-products-row">
+            <div class="item-related-products-row"> 
                 <!-- Related Product 1 -->
-                <div class="related-product-item">
-                    <img src="placeholder_product.png" alt="Watercolour Ground Iridescent Gold 118ml">
-                    <div class="related-product-brand">Daniel Smith</div>
-                    <div class="related-product-title">Watercolour Ground Iridescent Gold 118ml</div>
-                    <div class="related-product-price-row">
-                        <span class="related-product-price">$23.40</span>
-                        <button class="related-add-to-cart-btn">+</button>
-                        <button class="related-wishlist-btn">♡</button>
+                <div class="product-item">
+                    <img src="./assets/ds-ground-gold.jpg" alt="Watercolour Ground Iridescent Gold 118ml" class="product-image">
+                    <div class="flexrow">
+                        <p class="product-brand">Daniel Smith</p>
+                        <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                        </button>
+                    </div>
+                    <div class="product-name">
+                        <h3>Watercolour Ground</h3>
+                        <h3>Iridescent Gold 118ml</h3>
+                    </div>
+                    <div class="flexrow">
+                        <p class="product-price">$23.40</p>
+                        <button class="btn btn-primary add-to-cart-btn">
+                            <img src="./assets/add-white.svg" alt="add to cart">
+                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                        </button>
                     </div>
                 </div>
                 <!-- Related Product 2 -->
                 <div class="related-product-item">
-                    <img src="placeholder_product.png" alt="Watercolour Ground Buff Titanium 118ml">
-                    <div class="related-product-brand">Daniel Smith</div>
-                    <div class="related-product-title">Watercolour Ground Buff Titanium 118ml</div>
-                    <div class="related-product-price-row">
-                        <span class="related-product-price">$23.40</span>
-                        <button class="related-add-to-cart-btn">+</button>
-                        <button class="related-wishlist-btn">♡</button>
+                    <img src="./assets/ds-buff.jpg" alt="Watercolour Ground Buff Titanium 118ml" class="product-image">
+                    <div class="flexrow">
+                        <p class="product-brand">Daniel Smith</p>
+                        <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                        </button>
+                    </div>
+                    <div class="product-name">
+                        <h3>Watercolour Ground</h3>
+                        <h3>Buff Titanium 118ml</h3>
+                    </div>
+                    <div class="flexrow">
+                        <p class="product-price">$23.40</p>
+                        <button class="btn btn-primary add-to-cart-btn">
+                            <img src="./assets/add-white.svg" alt="add to cart">
+                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
+                        </button>
                     </div>
                 </div>
                 <!-- Related Product 3 -->
                 <div class="related-product-item">
-                    <img src="placeholder_product.png" alt="Watercolour Ground Pearl White 118ml">
-                    <div class="related-product-brand">Daniel Smith</div>
-                    <div class="related-product-title">Watercolour Ground Pearl White 118ml</div>
-                    <div class="related-product-price-row">
-                        <span class="related-product-price">$23.40</span>
-                        <button class="related-add-to-cart-btn">+</button>
-                        <button class="related-wishlist-btn">♡</button>
+                    <img src="./assets/ds-ground-pearl.jpg" alt="Watercolour Ground Pearl White 118ml" class="product-image">
+                    <div class="flexrow">
+                        <p class="product-brand">Daniel Smith</p>
+                        <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                        </button>
+                    </div>
+                    <div class="product-name">
+                        <h3>Watercolour Ground</h3>
+                        <h3>Pearl White 118ml</h3>
+                    </div>
+                    <div class="flexrow">
+                        <p class="product-price">$23.40</p>
+                        <button class="btn btn-primary add-to-cart-btn">
+                            <img src="./assets/add-white.svg" alt="add to cart">
+                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"></span>
+                        </button>
                     </div>
                 </div>
                 <!-- Related Product 4 -->
                 <div class="related-product-item">
-                    <img src="placeholder_product.png" alt="Watercolour Ground Transparent 118ml">
-                    <div class="related-product-brand">Daniel Smith</div>
-                    <div class="related-product-title">Watercolour Ground Transparent 118ml</div>
-                    <div class="related-product-price-row">
-                        <span class="related-product-price">$23.40</span>
-                        <button class="related-add-to-cart-btn">+</button>
-                        <button class="related-wishlist-btn">♡</button>
+                    <img src="./assets/ds-ground-transparent.jpg" alt="Watercolour Ground Transparent 118ml" class="product-image">
+                    <div class="flexrow">
+                        <p class="product-brand">Daniel Smith</p>
+                        <button class="wishlist-btn btn"> <img src="./assets/heart-dark.svg" alt="add to wishlist">
+                        </button>
+                    </div>
+                    <div class="product-name">
+                        <h3>Watercolour Ground</h3>
+                        <h3>Transparent 118ml</h3>
+                    </div>
+                    <div class="flexrow">
+                        <p class="product-price">$23.40</p>
+                        <button class="btn btn-primary add-to-cart-btn">
+                            <img src="./assets/add-white.svg" alt="add to cart">
+                            <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"></span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <!-- Pagination for related products -->
-            <div class="item-related-pagination">
-                <span>&#x2022;</span>
-                <span>&#x2726;</span>
-                <span>&#x2022;</span>
-                <span>&#x2726;</span>
-                <span>&#x2022;</span>
-                <span>&#x2726;</span>
-                <span>&#x2022;</span>
-            </div>
         </section>
-    </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-image flexcolumn">
+            <img src="./assets/star-pattern-default.png" class="pattern">
+        </div>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <p>Navigation</p>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#archival-framing">Archival Framing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Contact</p>
+                <div class="contact-info-container flexrow">
+                    <div class="contact-info-online">
+                        <ul>
+                            <li>
+                                <img src="./assets/phone.svg" class="footer-icon">
+                                03 9740 9984
+                            </li>
+                            <li>
+                                <img src="./assets/mail.svg" class="footer-icon">
+                                info@thealchemist.net.au
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-info-store">
+                        <ul>
+                            <li>
+                                <img src="./assets/location.svg" class="footer-icon">
+                                104 Mollison St, Kyneton 3444
+                            </li>
+                            <li>
+                                <img src="./assets/clock.svg" class="footer-icon">
+                                Tue-Fri 10am-5pm
+                            </li>
+                            <li class="footer-indent">Sat 10am-2pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img src="./assets/logo-icon.png">
+                <p><a class="footer-terms">Website Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
