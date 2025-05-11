@@ -16,7 +16,7 @@
     text-decoration: none;
     display: inline-block;
     box-sizing: border-box;
-    transition: all 0.2s;
+    transition: all 0.1s;
     background: none;
 	color: inherit;
 	border: none;
@@ -31,6 +31,16 @@
     border: 0;
 }
 
+.btn-primary:hover{
+    transform: translateY(2px);
+}    
+
+.btn-primary:active{
+    transform: translateY(2px);
+    filter: saturate(50%);
+}
+
+
 .btn-primary-inverse{
     background-color: var(--color-tertiary);
     color: var(--color-secondary);
@@ -43,7 +53,7 @@ button[disabled]{
   color: var(--color-grey);
 }
 /*change svg to pink*/
-/*filter: invert(15%) sepia(86%) saturate(3367%) hue-rotate(329deg) brightness(94%) contrast(100%); */
+
 
 .btn-full{
     width: 100%;
