@@ -125,3 +125,14 @@ font-size: var(--font-size-xl);
     font-size: var(--font-size-reg);
     color: var(--color-primary);
 }
+
+h2.item-description-title, h2.item-related-title{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-secondary);
+}
+
+.item-description-section > p{
+    line-height: 1.5;
+}
