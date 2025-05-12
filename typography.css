@@ -136,3 +136,11 @@ h2.item-description-title, h2.item-related-title{
 .item-description-section > p{
     line-height: 1.5;
 }
+
+/*checkout section*/
+
+.checkout-title{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-xl);
+}
+

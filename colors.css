@@ -48,3 +48,9 @@ nav.breadcrumbs > span {
     color: white;
     background-color: rgba(233, 157, 43, 0.9);
 }   
+
+/*checkout page*/
+
+.checkout-right{
+    border: 2px solid var(--color-secondary);
+}

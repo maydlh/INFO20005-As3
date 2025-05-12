@@ -263,13 +263,13 @@ width: 215px;
 
 /*individual item page*/
 
-main.item-container {
+main.item-container, main.checkout-container {
     width: 100%;
     max-width: 70vw;
-    margin: auto
+    margin: auto;
 }
 
-.item-main-section{
+.item-main-section, main.checkout-container{
     margin-bottom: var(--space-unit-4);
 }
 
@@ -312,4 +312,24 @@ h2.item-description-title, h2.item-related-title{
 
 .item-action > *{
     margin-bottom: var(--space-unit-half);
+}
+
+/*checkout page*/
+
+.checkout-main-grid{
+    display: flex;
+    gap: var(--space-unit);
+}
+
+.checkout-left, .checkout-right{
+    background-color: aquamarine;
+    max-width: 500px;
+    width: 100%;
+    height: 80vh;
+    padding: var(--space-unit);
+    margin-top: var(--space-unit-2);
+}
+
+.checkout-heading{
+    margin-top: var(--space-unit-2);
 }
