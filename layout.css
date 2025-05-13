@@ -361,3 +361,10 @@ h2.item-description-title, h2.item-related-title{
 .postcode{
     margin-top: 10px;
 }
+
+textarea{
+    resize: both;
+    max-width: 400px;
+    max-height: 150px;
+    width: 100%;
+}
