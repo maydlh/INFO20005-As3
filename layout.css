@@ -14,6 +14,11 @@
     align-items: center;
 }
 
+.flexrow-nospace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
 .flexcolumn{
     display: flex;
     flex-direction: column;
@@ -333,3 +338,14 @@ h2.item-description-title, h2.item-related-title{
 .checkout-heading{
     margin-top: var(--space-unit-2);
 }
+
+.checkout-section > h2 {
+    margin-bottom: var(--space-unit);
+}
+
+.checkout-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

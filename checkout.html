@@ -17,11 +17,11 @@
         <a href="#home" class="checkout-cancel">Cancel</a>
         <img src="./assets/logo-icon.png" alt="The Alchemist Logo" id="logo1"> 
     </nav>
-    
+    <!--main section-->
     <main class="checkout-container">
         <div class="flexrow checkout-heading">
             <h1 class="checkout-title">Checkout</h1>
-            <button class="btn btn-secondary">View Order</button>
+            <button class="btn btn-secondary view-order">View Order</button>
         </div>
         <form class="checkout-form">
             <div class="checkout-main-grid">
@@ -30,14 +30,18 @@
                     <div class="checkout-section">
                         <h2>1. Personal Detail</h2>
                         <div class="checkout-row flexrow">
-                            <input type="text" name="first-name" placeholder="First name*" required>
-                            <input type="text" name="last-name" placeholder="Last name*" required>
+                            <input type="text" name="first-name" required>
+                            <label class="placeholder"> First Name <span>*</span></label>
+                            <input type="text" name="last-name" required>
+                            <label class="placeholder"> Last Name <span>*</span></label>
                         </div>
-                        <div class="checkout-row">
-                            <input type="tel" name="phone" placeholder="+61  Phone*" required>
+                        <div class="checkout-row flexrow-nospace">
+                            <input type="tel" name="phone" required>
+                            <label class="placeholder">Phone Number <span>*</span></label>
                         </div>
-                        <div class="checkout-row">
-                            <input type="email" name="email" placeholder="Email address*" required>
+                        <div class="checkout-row flexrow-nospace">
+                            <input type="email" name="email" required>
+                            <label class="placeholder">Email Address<span>*</span></label>
                         </div>
                         <div class="checkout-row">
                             <label class="checkout-checkbox">
@@ -51,20 +55,30 @@
                         <h2>2. Shipping Address</h2>
                         <div class="checkout-row">
                             <select name="country" required>
-                                <option value="">Australia*</option>
-                                <!-- Add more countries as needed -->
+                                <option value="">Australia</option>
+                                <option value="">New Zealand</option>
                             </select>
                         </div>
                         <div class="checkout-row">
-                            <input type="text" name="address" placeholder="House No. and Street Name*" required>
+                            <input type="text" name="address" required>
+                            <label class="placeholder">House No. and Street Name<span>*</span></label>
                         </div>
                         <div class="checkout-row">
-                            <input type="text" name="suburb" placeholder="Suburb*" required>
+                            <input type="text" name="suburb" required>
+                            <label class="placeholder">Suburb<span>*</span></label>
                             <select name="state" required>
-                                <option value="">VIC*</option>
+                                <option value="">Victoria</option>
+                                <option value="">Australian Capital Territory</option>
+                                <option value="">New South Wales</option>
+                                <option value="">Northern Territory</option>
+                                <option value="">Queensland</option>
+                                <option value="">South Australia</option>
+                                <option value="">Tasmania</option>
+                                <option value="">Western Australia</option>
                                 <!-- Add more states as needed -->
                             </select>
-                            <input type="text" name="postcode" placeholder="Postcode*" required>
+                            <input type="text" name="postcode" required>
+                            <label class="placeholder">Postcode<span>*</span></label>
                         </div>
                     </div>
                     <!-- 3. Notes about your order (optional) -->

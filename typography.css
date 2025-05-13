@@ -140,7 +140,20 @@ h2.item-description-title, h2.item-related-title{
 /*checkout section*/
 
 .checkout-title{
-    font-family: var(--font-secondary);
+    font-family: var(--font-secondary),sans-serif;
     font-size: var(--font-size-xl);
 }
 
+.checkout-section > h2{
+    font-family: var(--font-tertiary),sans-serif;
+    font-size: var(--font-size-lg);
+}
+
+.checkout-checkbox{
+    font-family: var(--font-primary),sans-serif;
+    font-size: var(--font-size-xs);
+}
+
+.placeholder{
+    font-family: var(--font-primary);
+}
