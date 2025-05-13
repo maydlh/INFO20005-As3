@@ -164,12 +164,11 @@ input[name="postcode"], input[name="suburb"]{
     pointer-events: none;
 }
 
-input:focus + .placeholder{
+input:focus + .placeholder, input:valid + .placeholder{
     top: -10px;
     background-color: white;
     color: var(--color-primary);
 }
-
 
 .placeholder > span {
     color: var(--color-secondary);

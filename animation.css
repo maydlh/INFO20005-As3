@@ -1,0 +1,4 @@
+/*home page*/
+.header-image{
+    transition: background-image 1s ease-in-out;
+}
