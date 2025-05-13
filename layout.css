@@ -365,6 +365,8 @@ h2.item-description-title, h2.item-related-title{
 textarea{
     resize: both;
     max-width: 400px;
+    min-width: 300px;
+    min-height: 50px;
     max-height: 150px;
     width: 100%;
 }
