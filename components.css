@@ -184,3 +184,16 @@ select{
 select:valid { 
     color: var(--color-primary); 
 }
+
+input[type="checkbox"] {
+    accent-color: var(--color-secondary); /* chance checkmark to pink */
+}
+
+textarea{
+    resize: both;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 50px;
+    max-height: 150px;
+    width: 100%;
+}
