@@ -140,6 +140,8 @@ button.view-order{
     border: 1px solid var(--color-grey);
     border-radius: 5px;
     padding: 5px;
+    box-sizing: border-box;
+    height: 30px;
 }
 .checkout-row > input{
     padding: 5px;
@@ -147,9 +149,38 @@ button.view-order{
     max-width: 500px;
     position: relative;
 }
+input[name="postcode"], input[name="suburb"]{
+    width: 30%;
+}
 
 .placeholder{
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 8px;
+
+    font-size: var(--font-size-xs);
+    color: var(--color-grey);
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+input:focus + .placeholder{
+    top: -10px;
+    background-color: white;
+    color: var(--color-primary);
+}
+
+
+.placeholder > span {
+    color: var(--color-secondary);
+}
+
+select{
+    font-size: var(--font-size-xs);
+    font-family: var(--font-primary);
+    color: var(--color-grey);
+}
+
+select:valid { 
+    color: var(--color-primary); 
 }
