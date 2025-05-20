@@ -387,13 +387,13 @@ h2.item-description-title, h2.item-related-title{
 
     nav{
         padding: 10px 20px;
-        height: 65px;
+        height: 60px;
         
     }
 
-    nav > ul > li{
+    /*nav > ul > li{
         display: none;
-    }
+    }*/
     .nav-cart{
         justify-content: flex-start;
     }
@@ -403,7 +403,7 @@ h2.item-description-title, h2.item-related-title{
     }
 
     .nav-icon{
-        width: 40vw;
+        width: 30vw;
     }
     .nav-cart>span{                 /*the number in the cart*/
         border-radius: 40%;
@@ -451,21 +451,5 @@ h2.item-description-title, h2.item-related-title{
       }*/
 
     
-    }
-
-    @media (max-width: 820px){
-         .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-  
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-  
-    }
     }
    
