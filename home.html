@@ -12,26 +12,37 @@
     <link rel="stylesheet" href="components.css">
 </head>
 <body>
-    <nav class="flexrow">
-
-        <ul class="menu-item flexrow">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#framing">Framing</a></li>
-            <li><a href="#contact">Contact</a></li>   
-        </ul>
-        <img src="./assets/logo-icon.png" alt="The Alchemist Logo" id="logo1"> 
-        <div class="flexrow nav-icon">
-            <img src="./assets/profile.svg" alt="Profile" id="profile-icon"> 
-            <img src="./assets/heart.svg" alt="Wishlist" id="heart-icon">
-            <img src="./assets/search.svg" alt="Search" id="search-icon"> 
-            <div class="nav-cart">
-                <img src="./assets/cart.svg" alt="Shopping Bag" id="bag-icon"> 
-                <span id="cart-item-number">0</span>
-            </div>
-            
+    <div class="nav-container">
+        <div class="subcontainer">
+            <nav class="flexrow">
+                <ul class="hamburger">              <!--hamburger button-->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </ul>
+        
+                <ul class="menu-item flexrow">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#framing">Framing</a></li>
+                    <li><a href="#contact">Contact</a></li>   
+                </ul>
+        
+                <img src="./assets/logo-icon.png" alt="The Alchemist Logo" id="logo1"> 
+                <div class="flexrow nav-icon">
+                    <img src="./assets/profile.svg" alt="Profile" id="profile-icon"> 
+                    <img src="./assets/heart.svg" alt="Wishlist" id="heart-icon">
+                    <img src="./assets/search.svg" alt="Search" id="search-icon"> 
+                    <div class="nav-cart">
+                        <img src="./assets/cart.svg" alt="Shopping Bag" id="bag-icon"> 
+                        <span id="cart-item-number">0</span>
+                    </div>
+                    
+                </div>
+    
+            </nav>
         </div>
-    </nav>
+    </div>
     
     <header class="flexcolumn">
         <div class="header-container">
