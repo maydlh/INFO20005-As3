@@ -85,6 +85,8 @@ nav > div > img{
 
 .header-container{
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .header-image {
@@ -93,7 +95,10 @@ nav > div > img{
     right: 0;
     filter: brightness(50%);
     width: 100%;
-    transition: background-image 2s ease-in-out
+    height: 100%;
+    min-height: 1000px: 
+    transition: background-image 2s ease-in-out;
+    object-fit: cover;
   }
   
 .header-logo {
@@ -380,3 +385,11 @@ h2.item-description-title, h2.item-related-title{
         flex-direction: column;
         gap: 0;
     }
+
+    .header-logo{
+        max-width: 70%;
+    }
+    .header-image{
+        height: 200px;
+    }
+}
