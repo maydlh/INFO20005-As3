@@ -1,13 +1,6 @@
 // hamburger menu 
 
-/*const hamburger = document.querySelector(".hamburger");
-const menuItem = document.querySelector(".menu-item");
 
-hamburger.addEventListener("click",()=>{
-    hamburger.classList.toggle("active");
-    menuItem.classList.toggle("active");
-    document.body.classList.toggle("noscroll");
-})*/
 
 
 //menu in shop in laptop
@@ -135,6 +128,7 @@ const watercolourItemM = document.querySelector(".watercolour-menu-mobile");
 // Body for scroll locking
 const body = document.body;
 
+
 // Utility: Hide all menus and deactivate hamburger
 function hideAllMenus() {
   menuItem.classList.remove("active");
@@ -154,12 +148,15 @@ function showMenu(menu) {
 }
 
 // Hamburger click — toggles top-level nav only
+
 hamburger.addEventListener("click", () => {
-  const isOpen = menuItem.classList.contains("active");
+  const isOpen = hamburger.classList.contains("active");
 
   if (isOpen) {
+    // If hamburger is already active (cross), close everything
     hideAllMenus();
   } else {
+    // If opening the menu, just show the top-level nav
     showMenu(menuItem);
   }
 });
