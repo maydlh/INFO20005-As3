@@ -280,18 +280,23 @@ textarea{
     flex-direction: row;
     position: absolute;
     z-index: 10;
+    min-width: 100vw;
 }
 
 div[class*="expanded"]{ /*individual container for sub menus*/
-    display: ;
+    display: none;
     background-color: var(--color-tertiary);
     padding: var(--space-unit-2);
     height:430px;
-    width: 303px;
+    max-width: 300px;
+    width: 100%;
     border: 1px solid var(--color-grey);
 }
 
- 
+.shop-expanded.active, .painting-expanded.active, .watercolour-expanded.active{ 
+    /*js class to make the selections visible after alicking*/
+    display: block;
+} 
 
 div[class*="expanded"] ul li a{ /*all the menu item within all the sub menus*/
     color: var(--color-primary);
@@ -300,10 +305,7 @@ div[class*="expanded"] ul li a{ /*all the menu item within all the sub menus*/
 }
 
 
-.shop-expanded.active, .painting-expanded.active, .watercolour-expanded.active{ 
-    /*js class to make the selections visible after alicking*/
-    display: block;
-}
+
 
 ul[class*="expanded__item"] > li > a:hover{ /*animation for hovering on all item*/
     transform: translateY(-1px);
@@ -314,21 +316,19 @@ ul[class*="expanded__item"] > li > a:active{
     color: var(--color-secondary);
 }
 
-ul[class*="expanded__item"] {
+ul[class*="expanded__item"] { /*layout for individual items*/
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: var(--space-unit);
 }
 
-
-
-li.nav-item-all > a{  /*change top all option to pink*/
+ul[class*="expanded__item"] li[class *="all"] > a{ /*change top all option to pink*/
     color: var(--color-secondary);
-   
 }
+   
 
-li.nav-item-all > a:hover{
+li[class *="all"] > a:hover{
     filter: saturate(50%);
 }
 
