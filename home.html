@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,88 +12,107 @@
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="components.css">
 </head>
+
 <body>
-            <nav class="flexrow">
-                <ul class="hamburger">              <!--hamburger button-->
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </ul>
-                
-                <ul class="menu-item flexrow">
-                    <li class="nav-item"><a href="#home">Home</a></li>
-                    <li class="nav-item-shop-laptop"><a href="#shop">Shop</a></li>
-                    <li class="nav-item-shop-mobile"><a href="#shop">Shop</a></li>
-                    <li class="nav-item"><a href="#framing">Framing</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>   
-                </ul>
+    <nav class="flexrow">
+        <ul class="hamburger"> <!--hamburger button-->
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </ul>
 
-                <img src="./assets/logo-icon.png" alt="The Alchemist Logo" id="logo1"> 
-                <div class="flexrow nav-icon">
-                    <img src="./assets/profile.svg" alt="Profile" id="profile-icon"> 
-                    <img src="./assets/heart.svg" alt="Wishlist" id="heart-icon">
-                    <img src="./assets/search.svg" alt="Search" id="search-icon"> 
-                    <div class="nav-cart">
-                        <img src="./assets/cart.svg" alt="Shopping Bag" id="bag-icon"> 
-                        <span id="cart-item-number">0</span>
-                    </div>
-                    
-                </div>
+        <ul class="menu-item flexrow">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item-shop-laptop"><a href="#shop">Shop</a></li>
+            <li class="nav-item-shop-mobile"><a href="#shop">Shop</a></li>
+            <li class="nav-item"><a href="#framing">Framing</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
 
-                
-        
-            </nav>
+        <img src="./assets/logo-icon.png" alt="The Alchemist Logo" id="logo1">
+        <div class="flexrow nav-icon">
+            <img src="./assets/profile.svg" alt="Profile" id="profile-icon">
+            <img src="./assets/heart.svg" alt="Wishlist" id="heart-icon">
+            <img src="./assets/search.svg" alt="Search" id="search-icon">
+            <div class="nav-cart">
+                <img src="./assets/cart.svg" alt="Shopping Bag" id="bag-icon">
+                <span id="cart-item-number">0</span>
+            </div>
 
-            <section class="shop-expander-container">
-                <section class="shop-expanded">
-                <!--sub menu item after clicking on the shop-->
-                <ul class="shop-expanded__item">
-                    <li class="nav-item-all"><a href="#all" class="flexrow">Browse All <span>&gt</span></a></li>
-                    <li class="nav-item-painting"><a href="#painting" class="flexrow">Painting <span>&gt</span></a></li>
-                    <li class="nav-item"><a href="#drawing" class="flexrow">Drawing <span>&gt</span></a></li>
-                    <li class="nav-item"><a href="#brushes" class="flexrow">Brushes <span>&gt</span></a></li>  
-                    <li class="nav-item"><a href="#surfaces" class="flexrow">Surfaces <span>&gt</span></a></li>  
-                    <li class="nav-item"><a href="#studio" class="flexrow">Studio <span>&gt</span></a></li>  
-                    <li class="nav-item"><a href="#gift" class="flexrow">Gift Voucher <span>&gt</span></a></li>   
-                </ul>
-    
-                <ul class="painting-expanded__item">
-                    <li class="nav-item-all"><a href="#all" class="flexrow">All Painting <span>&gt</span></a></li>
-                    <li class="nav-item-watercolour"><a href="#watercolour" class="flexrow">Watercolour <span>&gt</span></a></li>
-                    <li class="nav-item"><a href="#gouache" class="flexrow">Gouache <span>&gt</span></a></li>
-                    <li class="nav-item"><a href="#acrylic" class="flexrow">Acrylic <span>&gt</span></a></li>  
-                    <li class="nav-item"><a href="#oil" class="flexrow">Oil <span>&gt</span></a></li>     
-                </ul>
-            </section>
-            </section>
+        </div>
 
-    
+
+
+    </nav>
+
+    <section class="shop-expanded-container">
+        <div class="shop-expanded">
+            <!--sub menu item after clicking on the shop-->
+            <ul class="shop-expanded__item">
+                <li class="nav-item-all"><a href="#all" class="flexrow">Browse All <span>&gt</span></a></li>
+                <li class="nav-item-painting"><a href="#painting" class="flexrow">Painting <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#drawing" class="flexrow">Drawing <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#brushes" class="flexrow">Brushes <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#surfaces" class="flexrow">Surfaces <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#studio" class="flexrow">Studio <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#gift" class="flexrow">Gift Voucher <span>&gt</span></a></li>
+            </ul>
+        </div>
+
+            <!--after clicking painting-->
+        <div class="painting-expanded">
+            <ul class="painting-expanded__item">
+                <li class="nav-item-all"><a href="#all" class="flexrow">All Painting <span>&gt</span></a></li>
+                <li class="nav-item-watercolour"><a href="#watercolour" class="flexrow">Watercolour <span>&gt</span></a>
+                </li>
+                <li class="nav-item"><a href="#gouache" class="flexrow">Gouache <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#acrylic" class="flexrow">Acrylic <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#oil" class="flexrow">Oil <span>&gt</span></a></li>
+            </ul>
+        </div>
+            <!--after clicking watercolour-->
+        <div class="watercolour-expanded">
+            <ul class="watercolour-expanded__item">
+                <li class="nav-item-all-watercolour"><a href="#all" class="flexrow">All Watercolour <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#ds" class="flexrow">Daniel Smith <span>&gt</span></a></li>
+                <li class="nav-item"><a href="#sen" class="flexrow">Sennelier <span>&gt</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+
     <header class="flexcolumn">
         <div class="header-container">
-             <img src="./assets/home1.png" class="header-image" id="header-image"> 
-             <img src="./assets/logo-word.png" class="header-logo"> 
+            <img src="./assets/home1.png" class="header-image" id="header-image">
+            <img src="./assets/logo-word.png" class="header-logo">
         </div>
-        <img src="./assets/star-pattern-1.png" class="pattern" id="header-image-indicator"> 
+        <img src="./assets/star-pattern-1.png" class="pattern" id="header-image-indicator">
     </header>
 
     <main class="home">
         <section class="about flexcolumn">
             <p class="heading">
-                The Alchemist is a small and independent art shop, born out of a passion for art supplies. We pride ourselves on our exceptional range of carefully selected artist materials.
+                The Alchemist is a small and independent art shop, born out of a passion for art supplies. We pride
+                ourselves on our exceptional range of carefully selected artist materials.
             </p>
             <p class="details">
-                We strive to support artists in their exploration, understanding and mastery of their medium and the development of their craft, by offering in-depth product information, technical advice, access to resources and some of the best artist materials from leading manufacturers and suppliers from Australia, Europe and the United States.
+                We strive to support artists in their exploration, understanding and mastery of their medium and the
+                development of their craft, by offering in-depth product information, technical advice, access to
+                resources and some of the best artist materials from leading manufacturers and suppliers from Australia,
+                Europe and the United States.
                 <br><br>
-                We also provide custom canvas stretching and archival picture framing for artworks, photographs, documents, objects and memorabilia.
+                We also provide custom canvas stretching and archival picture framing for artworks, photographs,
+                documents, objects and memorabilia.
                 <br><br>
-                Our picture framing offers contemporary style with museum quality at affordable prices. We believe not only in the presentation of an artwork, but equally in the preservation of the artwork.
+                Our picture framing offers contemporary style with museum quality at affordable prices. We believe not
+                only in the presentation of an artwork, but equally in the preservation of the artwork.
             </p>
         </section>
     </main>
 
     <footer>
         <div class="footer-image flexcolumn">
-            <img src="./assets/star-pattern-default.png" class="pattern"> 
+            <img src="./assets/star-pattern-default.png" class="pattern">
         </div>
         <div class="footer-content">
             <div class="footer-nav">
@@ -104,39 +124,39 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer-contact">
                 <p>Contact</p>
                 <div class="contact-info-container flexrow">
                     <div class="contact-info-online">
                         <ul>
                             <li>
-                            <img src="./assets/phone.svg" class="footer-icon"> 
-                            03 9740 9984
+                                <img src="./assets/phone.svg" class="footer-icon">
+                                03 9740 9984
                             </li>
                             <li>
-                            <img src="./assets/mail.svg" class="footer-icon"> 
-                            info@thealchemist.net.au
-                            </li> 
+                                <img src="./assets/mail.svg" class="footer-icon">
+                                info@thealchemist.net.au
+                            </li>
                         </ul>
                     </div>
                     <div class="contact-info-store">
                         <ul>
                             <li>
-                            <img src="./assets/location.svg" class="footer-icon"> 
-                            104 Mollison St, Kyneton 3444
+                                <img src="./assets/location.svg" class="footer-icon">
+                                104 Mollison St, Kyneton 3444
                             </li>
                             <li>
-                            <img src="./assets/clock.svg" class="footer-icon"> 
-                            Tue-Fri 10am-5pm
-                            </li>   
+                                <img src="./assets/clock.svg" class="footer-icon">
+                                Tue-Fri 10am-5pm
+                            </li>
                             <li class="footer-indent">Sat 10am-2pm</li>
-                        </ul> 
-                    </div> 
-                </div> 
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="footer-logo">
-                <img src="./assets/logo-icon.png" > 
+                <img src="./assets/logo-icon.png">
                 <p><a class="footer-terms">Website Terms & Conditions</a></p>
             </div>
         </div>
@@ -144,4 +164,5 @@
     <script src="home.js"></script>
     <script src="navbar.js"></script>
 </body>
+
 </html>
