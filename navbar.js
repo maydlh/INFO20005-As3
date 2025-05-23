@@ -17,3 +17,5 @@ shop.addEventListener("click",()=>{
     menuItem.classList.toggle("active");
     document.body.classList.toggle("noscroll");
 })
+
+//laptop: menu option sfter shop is clicked

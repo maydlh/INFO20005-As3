@@ -237,7 +237,7 @@ textarea{
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .menu-item, .menu-item-hidden{/*the list of words in nav*/
+    .menu-item, .menu-item-hidden{/*the list of words in nav in mobile*/
         position: fixed;
         z-index: 10;
         left: -100%;
@@ -265,15 +265,49 @@ textarea{
 
 }
 
-.shop-expanded{
+.shop-expanded{ /*the panel after shop is clicked*/
+    display: none;
     background-color: var(--color-tertiary);
+    padding: var(--space-unit-2);
+    position: absolute;
+    z-index: 10;
+    height:430px;
+    width: 303px;
+    border: 1px solid var(--color-grey);
    
+}
+
+.shop-expanded.active{
+    display: block;
 }
 
 .shop-expanded__item > li > a{
     color: var(--color-primary);
+    font-size: var(--font-size-lg);
+    font-family: var(--font-secondary), sans-serif;
 }
 
-.shop-expanded__item > .nav-item-all{
+.shop-expanded__item > li > a:hover{
+    transform: translateY(-1px);
     color: var(--color-secondary);
 }
+.shop-expanded__item > li > a:active{
+    color: var(--color-secondary);
+}
+.shop-expanded__item {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li.nav-item-all > a{  /*change top all option to pink*/
+    color: var(--color-secondary);
+   
+}
+
+li.nav-item-all > a:hover{
+    filter: saturate(50%);
+}
+
