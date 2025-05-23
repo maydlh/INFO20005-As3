@@ -219,8 +219,18 @@ textarea{
         height: 100vh; /* Prevent scrolling on mobile */
 }
 
-
+.nav-item-shop-mobile{
+    display: none;
+}
 @media(max-width: 820px){
+    .nav-item-shop-laptop{
+        display: none;
+    }
+
+    .nav-item-shop-mobile{
+        display: block;
+    }
+   
     .hamburger{
         display: block;
     }

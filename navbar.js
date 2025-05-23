@@ -11,7 +11,7 @@ hamburger.addEventListener("click",()=>{
 
 
 //menu in shop in laptop
-const shop = document.querySelector(".nav-item-shop");
+const shop = document.querySelector(".nav-item-shop-laptop");
 const shopItem = document.querySelector(".shop-expanded");
 shop.addEventListener("click",()=>{
     shopItem.classList.toggle("active");
