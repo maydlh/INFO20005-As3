@@ -1,13 +1,13 @@
 // hamburger menu 
 
-const hamburger = document.querySelector(".hamburger");
+/*const hamburger = document.querySelector(".hamburger");
 const menuItem = document.querySelector(".menu-item");
 
 hamburger.addEventListener("click",()=>{
     hamburger.classList.toggle("active");
     menuItem.classList.toggle("active");
     document.body.classList.toggle("noscroll");
-})
+})*/
 
 
 //menu in shop in laptop
@@ -108,4 +108,79 @@ function handleResize() {
   
   // Run on window resize
   window.addEventListener("resize", handleResize);
+
+
+
+
+
+
+
+//menu for mobile
+
+  
+// Hamburger and top-level menu
+const hamburger = document.querySelector(".hamburger");
+const menuItem = document.querySelector(".menu-item"); // <ul class="menu-item">
+
+// Submenu triggers
+const shopM = document.querySelector(".nav-item-shop-mobile a");
+const paintingM = document.querySelector(".nav-item-painting-m a");
+const watercolourM = document.querySelector(".nav-item-watercolour-m a");
+
+// Submenu containers
+const shopItemM = document.querySelector(".shop-menu-mobile");
+const paintingItemM = document.querySelector(".painting-menu-mobile");
+const watercolourItemM = document.querySelector(".watercolour-menu-mobile");
+
+// Body for scroll locking
+const body = document.body;
+
+// Utility: Hide all menus and deactivate hamburger
+function hideAllMenus() {
+  menuItem.classList.remove("active");
+  shopItemM.classList.remove("active");
+  paintingItemM.classList.remove("active");
+  watercolourItemM.classList.remove("active");
+  hamburger.classList.remove("active");
+  body.classList.remove("noscroll");
+}
+
+// Utility: Show one menu only
+function showMenu(menu) {
+  hideAllMenus(); // hide everything first
+  menu.classList.add("active");
+  hamburger.classList.add("active");
+  body.classList.add("noscroll");
+}
+
+// Hamburger click — toggles top-level nav only
+hamburger.addEventListener("click", () => {
+  const isOpen = menuItem.classList.contains("active");
+
+  if (isOpen) {
+    hideAllMenus();
+  } else {
+    showMenu(menuItem);
+  }
+});
+
+// Click: Shop (from mobile menu)
+shopM.addEventListener("click", (e) => {
+  e.preventDefault();
+  showMenu(shopItemM);
+});
+
+// Click: Painting (from Shop submenu)
+paintingM.addEventListener("click", (e) => {
+  e.preventDefault();
+  showMenu(paintingItemM);
+});
+
+// Click: Watercolour (from Painting submenu)
+watercolourM.addEventListener("click", (e) => {
+  e.preventDefault();
+  showMenu(watercolourItemM);
+});
+
+
 

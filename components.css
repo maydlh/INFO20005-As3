@@ -337,12 +337,21 @@ li[class *="all"] > a:hover{
 
 
 .shop-menu-mobile, .painting-menu-mobile, .watercolour-menu-mobile{
-    display:  ; /*change this to none*/
-    position: ; /*change this to absolute*/
+    display: none ; /*change this to none*/
+    
+}
+
+.shop-menu-mobile.active, .painting-menu-mobile.active ,.watercolour-menu-mobile.active{
+display: block;
+position: absolute ; /*change this to absolute*/
     background-color: var(--color-tertiary);
     z-index: 10;
     width: 100%;
     height: 100vh;
+}
+
+.shop-menu-mobile.noscroll, .painting-menu-mobile.noscroll, .watercolour-menu-mobile.noscroll{
+    overflow: hidden;
 }
 
 div[class *="-menu-mobile"] > ul > li > a{
