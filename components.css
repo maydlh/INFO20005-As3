@@ -312,8 +312,8 @@ ul[class*="expanded__item"] > li > a:hover{ /*animation for hovering on all item
     color: var(--color-secondary);
 }
 
-ul[class*="expanded__item"] > li > a:active{
-    color: var(--color-secondary);
+ul[class*="expanded__item"] > li > a.selected{
+    background-color: var(--color-grey-light); 
 }
 
 ul[class*="expanded__item"] { /*layout for individual items*/
