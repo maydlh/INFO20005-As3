@@ -22,13 +22,32 @@ const shopItem = document.querySelector(".shop-expanded");
 const paintingItem = document.querySelector(".painting-expanded");
 const watercolourItem = document.querySelector(".watercolour-expanded");
 
+// Helper: remove .selected from all links inside a container
+function clearSelectedLinks(container) {
+  container.querySelectorAll('a.selected').forEach(link => {
+    link.classList.remove("selected");
+  });
+}
+
 // Toggle Shop Tab
 shop.addEventListener("click", () => {
-  if (
+  const isAnyTabOpen =
     shopItem.classList.contains("active") ||
     paintingItem.classList.contains("active") ||
-    watercolourItem.classList.contains("active")
-  ) {
+    watercolourItem.classList.contains("active");
+
+  if (isAnyTabOpen) {
+    // Close all tabs
+    if (shopItem.classList.contains("active")) {
+      clearSelectedLinks(shopItem); // Remove link styles from closed tab
+    }
+    if (paintingItem.classList.contains("active")) {
+      clearSelectedLinks(paintingItem);
+    }
+    if (watercolourItem.classList.contains("active")) {
+      clearSelectedLinks(watercolourItem);
+    }
+
     shopItem.classList.remove("active");
     paintingItem.classList.remove("active");
     watercolourItem.classList.remove("active");
@@ -39,12 +58,26 @@ shop.addEventListener("click", () => {
 
 // Toggle Painting Tab
 painting.addEventListener("click", () => {
-  paintingItem.classList.toggle("active");
+  const isActive = paintingItem.classList.contains("active");
+
+  if (isActive) {
+    paintingItem.classList.remove("active");
+    clearSelectedLinks(paintingItem); // Deselect painting links
+  } else {
+    paintingItem.classList.add("active");
+  }
 });
 
 // Toggle Watercolour Tab
 watercolour.addEventListener("click", () => {
-  watercolourItem.classList.toggle("active");
+  const isActive = watercolourItem.classList.contains("active");
+
+  if (isActive) {
+    watercolourItem.classList.remove("active");
+    clearSelectedLinks(watercolourItem); // Deselect watercolour links
+  } else {
+    watercolourItem.classList.add("active");
+  }
 });
 
 // Handle link clicks (subcategory items)
@@ -59,4 +92,20 @@ document.querySelectorAll('ul[class*="expanded__item"] > li > a').forEach(link =
     this.classList.add("selected");
   });
 });
+
+//when screen resize the whole sub category disappears
+function handleResize() {
+    const container = document.getElementById("shop-expanded-container-laptop");
+    if (window.innerWidth < 820) {
+      container.style.display = "none";
+    } else {
+      container.style.display = "flex";
+    }
+  }
+  
+  // Run once on load
+  handleResize();
+  
+  // Run on window resize
+  window.addEventListener("resize", handleResize);
 
