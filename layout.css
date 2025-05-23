@@ -47,7 +47,7 @@ nav > ul{
     gap: 10px;
 } 
 
-nav > img{        
+nav > a > img{        
    width: auto; 
    height: auto;
    max-width: 67.78px;
@@ -319,7 +319,7 @@ h2.item-description-title, h2.item-related-title{
 
 .item-qty-selector > input{
     padding: 3px;
-    max-width: 10vw;
+    min-width: 10vw;
 }
 
 .item-action > *{
