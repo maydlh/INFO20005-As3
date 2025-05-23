@@ -13,9 +13,11 @@ body{
 nav, .footer-content{
     background-color: var(--color-primary);
 }
-nav.breadcrumbs{
+nav.breadcrumbs, nav.breadcrumbs-mobile{
     background-color: transparent;
 }
+
+
 #cart-item-number{
     background-color: var(--color-secondary);
 }
@@ -36,11 +38,13 @@ footer{
     color: var(--color-tertiary);
 }
 
-nav.breadcrumbs, nav.breadcrumbs > a{
+nav.breadcrumbs, nav.breadcrumbs > a, .breadcrumbs-mobile > a{
 color: var(--color-grey);
+text-decoration: none;
 }
 
-nav.breadcrumbs > span {
+
+nav.breadcrumbs > span, .breadcrumbs-mobile > span {
     color: var(--color-primary);
 }
 
