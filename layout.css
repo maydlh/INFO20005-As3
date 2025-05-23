@@ -291,13 +291,17 @@ main.item-container, main.checkout-container {
     flex-direction: column;
     justify-content: space-between;
     gap: 5vh;
+   
 }
 
 .item-image-area{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    
 }
+
+
 
 .item-zoom-icon{
     margin-left: -60px;
@@ -319,7 +323,7 @@ h2.item-description-title, h2.item-related-title{
 
 .item-qty-selector > input{
     padding: 3px;
-    min-width: 10vw;
+    max-width: 10vw;
 }
 
 .item-action > *{
