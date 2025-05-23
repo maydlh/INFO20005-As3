@@ -10,12 +10,12 @@ hamburger.addEventListener("click",()=>{
 })
 
 
-//menu in shop
+//menu in shop in laptop
 const shop = document.querySelector(".nav-item-shop");
+const shopItem = document.querySelector(".shop-expanded");
 shop.addEventListener("click",()=>{
-    hamburger.classList.toggle("active");
-    menuItem.classList.toggle("active");
-    document.body.classList.toggle("noscroll");
+    shopItem.classList.toggle("active");
 })
 
 //laptop: menu option sfter shop is clicked
+
