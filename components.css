@@ -509,3 +509,90 @@ body.noscroll {
     
   }
 
+  /*popup when click add to cart*/
+
+  .quantity-popup{
+    border: 1px solid var(--color-grey);
+    border-radius: 5px;
+    width:100%;
+    height: 186px;
+    max-width: 350px;
+    max-height: 190px;
+   /* position: fixed; */
+    
+  }
+
+ button.cancel{
+    margin-top: var(--space-unit-half);
+  }
+
+  .quantity-popup-main{
+    width: 70%;
+    height: 78%;
+    margin: -20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .quantity-popup-main h3{
+    font-family: var(--font-secondary), sans-serif;
+    font-size: var(--font-size-reg);
+    text-align: center;
+  }
+
+  .quantity-popup-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quantity-popup-image{ /*placeholder for dynamic image*/
+    width: 75px;
+    height: 75px;
+  }
+
+  .number-input {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-unit-half);
+  }
+  
+  .number-input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    height: 31px;
+  }
+  
+  .number-input-field > * {
+    border-left: 1px solid var(--color-primary);
+    border-right: 1px solid var(--color-primary);
+    height: 100%;
+    width: 30px;
+    box-sizing: border-box;
+    
+  }
+
+  .number-input-field input[type=number]::-webkit-outer-spin-button,
+  .number-input-field input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  
+  .number-input-field button {
+    background: transparent;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .number-input-field input {
+    text-align: center;
+    border: none;
+    
+    
+  }
