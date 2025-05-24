@@ -210,7 +210,7 @@ textarea{
     height: 3px;
     margin: 5px 0;
     transition: all 0.3s ease;
-    background-color: var(--color-tertiary  );
+    background-color: var(--color-tertiary);
 }
 
 
@@ -379,8 +379,20 @@ nav.breadcrumbs-mobile{
    }
 
 
-@media (max-width: 820px) {
-    .shop-expanded-container-mobile{
-        display: ;
-    }
+
+
+/*filter in browse*/
+
+
+
+.toggle-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("./assets/add.svg") no-repeat center;
+  }
+
+
+.toggle-icon.active{
+    background-image: url("./assets/minus.svg");
 }
