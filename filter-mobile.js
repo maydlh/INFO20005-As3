@@ -9,7 +9,7 @@ const mediumGrounds = document.getElementById("mediumGrounds");
 const brandCount = document.getElementById("brandCount");
 const typeCount = document.getElementById("typeCount");
 
-const allProducts = document.querySelectorAll(".product");
+const allProducts = document.querySelectorAll(".product-item");
 
 function updateApplyButton() {
   if (danielSmith.checked || mediumGrounds.checked) {
@@ -52,7 +52,7 @@ mediumGrounds.addEventListener("change", () => {
 applyFilter.addEventListener("click", () => {
   allProducts.forEach(product => {
     const isDS = product.classList.contains("ds");
-    const isMedium = product.classList.contains("medium");
+    const isMedium = product.classList.contains("mg");
 
     const show =
       (!danielSmith.checked || isDS) &&
