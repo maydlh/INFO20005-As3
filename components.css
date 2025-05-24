@@ -384,7 +384,6 @@ nav.breadcrumbs-mobile{
 /*filter in browse*/
 
 
-
 .toggle-icon {
     display: inline-block;
     width: 24px;
@@ -395,4 +394,12 @@ nav.breadcrumbs-mobile{
 
 .toggle-icon.active{
     background-image: url("./assets/minus.svg");
+}
+
+.filter-options{
+    display: none;
+}
+
+.filter-options.active{
+    display: block;
 }
