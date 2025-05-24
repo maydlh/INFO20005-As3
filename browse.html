@@ -95,17 +95,62 @@
                     
                 </div>
             </aside>
+            
+            
             <!--filter and sort by top bar for mobile and smaller screen-->
+
+
             <section class="mobile-filter flexrow">
-                <div class="filter-header-mobile flexrow">
+                <button id="filterBtn" class="filter-header-mobile flexrow">
                     <h2 class="browse">Filter</h2>
                     <span class="filter-icon"> <img src="./assets/filter.svg"> </span>
-                </div>
+                </button>
                 <div class="sort-by-mobile">
                     <h2>Sort by</h2>
                 </div>
 
             </section>
+
+              <!--Mobile Overlay -->
+                <div class="overlay" id="overlay"></div>
+
+               
+  <div class="bottom-popup" id="bottomPopup">  <!--Mobile  Bottom Popup -->
+    <div class="popup-section">
+      <h3>Brand <span id="brandCount"></span></h3>
+      <label><input type="checkbox" id="danielSmith"> Daniel Smith</label>
+      <label><input type="checkbox"> Sennelier</label>
+    </div>
+    <div class="popup-section">
+      <h3>Type <span id="typeCount"></span></h3>
+      <label><input type="checkbox"> Tubes</label>
+      <label><input type="checkbox" id="mediumGrounds"> Mediums & Grounds</label>
+      <label><input type="checkbox"> Half Pan</label>
+      <label><input type="checkbox"> Dot Cards</label>
+    </div>
+
+    <div class="popup-section"> <!--static-->
+        <h3>Size</h3>
+        <label><input type="checkbox"> 118ml</label>
+        <label><input type="checkbox"> 473ml</label>
+    </div>
+
+    <div class="popup-section"> <!--static-->
+        <h3>Colour</h3>
+        <label><input type="checkbox"> White</label>
+        <label><input type="checkbox"> Black</label>
+        <label><input type="checkbox"> Red</label>
+        <label><input type="checkbox"> Yellow</label>
+        <label><input type="checkbox"> Blue</label>
+        <label><input type="checkbox"> Green</label>
+        <label><input type="checkbox"> Silver</label>
+        <label><input type="checkbox"> Gold</label>
+        <label><input type="checkbox"> Purple</label>
+    </div>
+
+    <button id="applyFilter" disabled>Apply Filter</button>
+  </div>
+
             <section class="product">
                 <!-- heading and filter -->
                 <header class="browse-header flexrow">
@@ -466,7 +511,9 @@
     </footer>
 
     <script src="navbar-simple.js"></script>
-    <script src="filter.js"></script>
+    <script src="filter-laptop.js"></script>
+    <script src="filter-mobile.js"></script>
+
     </body>
     
     </html>

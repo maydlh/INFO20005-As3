@@ -383,7 +383,7 @@ nav.breadcrumbs-mobile{
 
 /*filter in browse*/
 
-
+/*laptop*/
 .toggle-icon {
     display: inline-block;
     width: 24px;
@@ -403,3 +403,56 @@ nav.breadcrumbs-mobile{
 .filter-options.active{
     display: block;
 }
+
+/*filter in mobile browse*/
+
+.filter-header-mobile{      /*reset the filter button*/
+    text-decoration: none;
+    background: none;
+	border: none;
+}
+
+body.noscroll {
+    overflow: hidden;
+  }
+
+  #filterBtn.active {
+    background: var(--color-grey-light);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  .bottom-popup {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: white;
+    transition: bottom 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .bottom-popup.active {
+    bottom: 0;
+  }
+
+  #applyFilter:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
