@@ -206,6 +206,14 @@ footer li, footer p{
     margin: 0 auto;
 }
 
+.filter-options{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-unit);
+}
+
 .browse-header{
     margin-bottom: var(--space-unit-2);
 }

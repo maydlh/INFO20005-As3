@@ -81,6 +81,9 @@ h2.browse{
     font-weight: var(--font-weight-semibold);
 }
 
+.filter-options label{
+    font-size: var(--font-size-xs);
+}
 
 .back-soon-overlay{
     font-size: var(--font-size-lg);

@@ -53,6 +53,10 @@ nav.breadcrumbs > span, .breadcrumbs-mobile > span {
     background-color: rgba(233, 157, 43, 0.9);
 }   
 
+.filter-options label{
+    color: var(--color-secondary);
+}
+
 /*checkout page*/
 
 .checkout-right{
