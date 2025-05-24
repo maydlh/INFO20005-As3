@@ -116,39 +116,47 @@
 
                
   <div class="bottom-popup" id="bottomPopup">  <!--Mobile  Bottom Popup -->
-    <div class="popup-section">
+    <div class="popup-section"> <!--brand section-->
       <h3>Brand <span id="brandCount"></span></h3>
-      <label><input type="checkbox" id="danielSmith"> Daniel Smith</label>
-      <label><input type="checkbox"> Sennelier</label>
+      <div class="popup-option">
+          <label><input type="checkbox" id="danielSmith"><span>Daniel Smith</span></label>
+          <label><input type="checkbox"> Sennelier</label>
+      </div>
     </div>
-    <div class="popup-section">
+    <div class="popup-section"> <!--type section-->
       <h3>Type <span id="typeCount"></span></h3>
-      <label><input type="checkbox"> Tubes</label>
-      <label><input type="checkbox" id="mediumGrounds"> Mediums & Grounds</label>
-      <label><input type="checkbox"> Half Pan</label>
-      <label><input type="checkbox"> Dot Cards</label>
+      <div class="popup-option">
+          <label><input type="checkbox"> Tubes</label>
+          <label><input type="checkbox" id="mediumGrounds"> <span>Mediums & Grounds</span></label>
+          <label><input type="checkbox"> Half Pan</label>
+          <label><input type="checkbox"> Dot Cards</label>
+      </div>
     </div>
 
     <div class="popup-section"> <!--static-->
         <h3>Size</h3>
-        <label><input type="checkbox"> 118ml</label>
-        <label><input type="checkbox"> 473ml</label>
+        <div class="popup-option">
+            <label><input type="checkbox" disabled> 118ml</label>
+            <label><input type="checkbox" disabled> 473ml</label>
+        </div>
     </div>
 
     <div class="popup-section"> <!--static-->
         <h3>Colour</h3>
-        <label><input type="checkbox"> White</label>
-        <label><input type="checkbox"> Black</label>
-        <label><input type="checkbox"> Red</label>
-        <label><input type="checkbox"> Yellow</label>
-        <label><input type="checkbox"> Blue</label>
-        <label><input type="checkbox"> Green</label>
-        <label><input type="checkbox"> Silver</label>
-        <label><input type="checkbox"> Gold</label>
-        <label><input type="checkbox"> Purple</label>
+        <div class="popup-option">
+            <label><input type="checkbox" disabled> White</label>
+            <label><input type="checkbox" disabled> Black</label>
+            <label><input type="checkbox" disabled> Red</label>
+            <label><input type="checkbox" disabled> Yellow</label>
+            <label><input type="checkbox" disabled> Blue</label>
+            <label><input type="checkbox" disabled> Green</label>
+            <label><input type="checkbox" disabled> Silver</label>
+            <label><input type="checkbox" disabled> Gold</label>
+            <label><input type="checkbox" disabled> Purple</label>
+        </div>
     </div>
 
-    <button id="applyFilter" disabled>Apply Filter</button>
+    <button class="apply-filter-button" id="applyFilter" disabled>Apply Filter</button>
   </div>
 
             <section class="product">
