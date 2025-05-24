@@ -22,7 +22,7 @@ checkboxBrand.addEventListener("change", function () {
       if (checkboxBrand.checked) {
         item.style.display = "none";
       } else {
-        item.style.display = "block"; // or whatever display they originally had
+        item.style.display = "block"; 
       }
     });
   });
@@ -36,7 +36,7 @@ checkboxType.addEventListener("change", function () {
       if (checkboxType.checked) {
         item.style.display = "none";
       } else {
-        item.style.display = "block"; // or whatever display they originally had
+        item.style.display = "block"; 
       }
     });
   });
