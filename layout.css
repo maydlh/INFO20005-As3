@@ -331,12 +331,54 @@ display: flex;
 
     section.product-grid{
         width: 100%;
-        margin: auto 
+        margin: auto; 
+        
+
     }
 
-    .browse-header{
-        margin-left: ;
+    .product-item{
+        width: 160px;
+        height: 220px;
     }
+
+    .product{
+padding-right: 0;
+    }
+
+    .product-item .product-image{
+        height: 115px;
+        width: 115px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .product-item .product-brand, .product-item .product-name{
+        font-size: var(--font-size-xs);
+    }
+
+    .product-item .product-price{
+        font-size: var(--font-size-reg);
+    }
+
+    .wishlist-btn img{
+        height: 14px;
+    }
+
+    .product-item .add-to-cart-btn{
+        width: 52px;
+        height: 29px;
+    }
+
+    .product-item .add-to-cart-btn img{
+        width: 40%;
+    }
+
+    .announcement-message{
+        font-size: var(--font-size-xs);
+        height: 15px;
+    }
+
+    
 }
 
 /*individual item page*/
