@@ -189,7 +189,7 @@
                         </div>
                         <div class="flexrow">
                             <p class="product-price">$23.40</p>
-                            <button class="btn btn-primary add-to-cart-btn">
+                            <button class="btn btn-primary add-to-cart-btn" id="addtocart">
                                 <img src="./assets/add-white.svg" alt="add to cart">
                                 <span class="cart-icon"> <img src="./assets/cart-white.svg" alt="add to cart"> </span>
                             </button>
@@ -465,13 +465,16 @@
         </main>
     
     </div> <!-- end .container -->
-    
-    <section class="quantity-popup"> <!--popup when click on add to cart-->
-        <button class="btn cancel"><img src="./assets/cross.svg" alt="cancel"></button>
+
+
+     
+    <section class="quantity-popup hidden"> <!--popup when click on add to cart-->
+       
+        <button id="closePopup" class="btn cancel"><img src="./assets/cross.svg" alt="cancel"></button>
         <div class="quantity-popup-main">
             <h3>Select Quantity</h3>
             <div class="quantity-popup-content">
-                <div class="quantity-popup-image"></div> <!--placeholder for the image selected-->
+                <div class="quantity-popup-image"> <img id="popup-product-image" src="" alt="Selected Product"></div> <!--placeholder for the image selected-->
                 <div class="number-input">
                     <div class="number-input-field">
                         <button class="minus btn">-</button>
@@ -481,11 +484,10 @@
                     <span class="item-stock">Stock count: 3</span>
                 </div>
             </div>
-            <button id="addtocart" class="item-add-to-cart-btn btn btn-primary btn-ful"> <img src="./assets/cart-white.svg" class="add-cart-icon">ADD TO CART</button>
+            <button class="item-add-to-cart-btn btn btn-primary btn-ful"> <img src="./assets/cart-white.svg" class="add-cart-icon">ADD TO CART</button>
         </div>
         
     </section>
-
 
     <!--Footer-->
     <footer>
@@ -542,6 +544,7 @@
     <script src="navbar-simple.js"></script>
     <script src="filter-laptop.js"></script>
     <script src="filter-mobile.js"></script>
+    <script src="add-to-cart.js"></script>
 
     </body>
     
