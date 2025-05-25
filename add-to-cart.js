@@ -6,20 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const popupAddToCartBtn = document.querySelector(".item-add-to-cart-btn");
     const cartCountElem = document.getElementById("cart-item-number");
   
-    // ✅ 1. Load cart count from localStorage on page load
+    // 1. Load cart count from localStorage on page load
     let cartCount = parseInt(localStorage.getItem("cartCount")) || 0;
     cartCountElem.textContent = cartCount;
   
-    // ✅ Function to reset popup button
+    // Function to reset popup button
     function resetPopupAddToCartBtn() {
       popupAddToCartBtn.disabled = false;
       popupAddToCartBtn.style.backgroundColor = "";
       popupAddToCartBtn.style.color = "";
       popupAddToCartBtn.style.border = "";
-      popupAddToCartBtn.innerHTML = `
-        <img src="./assets/cart-white.svg" class="add-cart-icon" alt="cart icon" style="width:16px; height:16px; vertical-align: middle; margin-right: 6px;">
-        ADD TO CART
-      `;
     }
   
     // When a visible "Add to Cart" button is clicked
@@ -43,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
       popup.classList.add("hidden");
     });
   
-    // ✅ When popup "Add to Cart" button is clicked
+    // When popup "Add to Cart" button is clicked
     popupAddToCartBtn.addEventListener("click", () => {
       cartCount++;
       cartCountElem.textContent = cartCount;
   
-      // ✅ 2. Save cart count to localStorage
+      // 2. Save cart count to localStorage
       localStorage.setItem("cartCount", cartCount);
   
       popupAddToCartBtn.innerHTML = `

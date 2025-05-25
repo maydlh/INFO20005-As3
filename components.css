@@ -612,3 +612,31 @@ body.noscroll {
     
     
   }
+
+  /*shopping cart sidebar*/
+  .cart-container{
+    position: absolute;
+    top: 77px;
+    right: 0;
+    
+    background-color: beige;
+    width: 390px;
+    height: calc(100vh - 77px);
+    overflow-y: auto;
+
+  }
+
+  .close-button-section{
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+  .cart-checkout-btn{
+
+  }
+  @media (max-width: 820px) {
+    .cart-container{
+        width: 100vw;
+        top: 60px;
+    }
+  }
