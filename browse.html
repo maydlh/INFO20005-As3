@@ -503,8 +503,8 @@
                 <h1 class="cart-title">Shopping Cart (<span id="cart-count">0</span>)</h1>
                 <!-- Free Shipping Banner -->
                 <div class="cart-free-shipping-banner">
-                    <span class="cart-free-shipping-icon"><img src="./assets/delivery.svg" alt=""></span>
-                    You have <b id="free-shipping-amount">$35.40</b> until you qualify for free shipping
+                    <img src="./assets/delivery.svg" class="cart-free-shipping-icon">
+                    <p>You have <i id="free-shipping-amount">$35.40</i> until you qualify for free shipping</p>
                 </div>
                 <!-- Product List -->
                 <div class="cart-product-list" id="cart-product-list">
@@ -512,16 +512,19 @@
                     <div class="cart-product">
                         <img src="placeholder_product.png" alt="Product Image" class="cart-product-image">
                         <div class="cart-product-info">
-                            <span class="cart-product-brand"><!--Brand Name--></span>
-                            <span class="cart-product-name"><!--Product Name--></span>
+                            <span class="cart-product-brand"><!--Brand Name-->brand name</span>
+                            <span class="cart-product-name"><!--Product Name-->product name</span>
                             <div class=" number-input-field">
                                 <button class="cart-qty-btn"><img src="./assets/minus-grey.svg" alt=""></button>
                                 <input type="number" class="cart-qty-input " value="1" min="1"><!--this gets changed depending on hao many are put in-->
                                 <button class="cart-qty-btn"><img src="./assets/add-grey.svg" alt=""></button>
                             </div>
                         </div>
-                        <span class="cart-product-price"><!--price--></span>
-                        <button class="cart-product-remove" aria-label="Remove"><img src="./assets/cross.svg" alt=""></button>
+                        <div class="cart-product-right">
+                            
+                            <button class="cart-product-remove btn" aria-label="Remove"><img src="./assets/cross.svg" alt=""></button>
+                            <span class="cart-product-price"><!--price-->$$$</span>
+                        </div>
                     </div>
                 </div>
                 <hr class="cart-divider">

@@ -554,8 +554,4 @@ h2.item-description-title, h2.item-related-title{
     }
 
 
-   @media (max-width: 820px){
-    .menu-item-hidden{
-       ;
-    }
-   }
+ 
