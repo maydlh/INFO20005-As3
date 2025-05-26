@@ -491,77 +491,76 @@
 
 <!--shopping cart-->
     <section class="cart-container">
-            <!-- Close Button -->
-            <div class="close-button-section">
-                <button class="cart-close-btn btn" aria-label="Close Cart"><img src="./assets/cross.svg" alt=""></button>
-                <hr class="cart-divider">
-            </div>
-            
-            <!-- Cart Title -->
-            <h1 class="cart-title">Shopping Cart (<span id="cart-count">0</span>)</h1>
-            <!-- Free Shipping Banner -->
-            <div class="cart-free-shipping-banner">
-                <span class="cart-free-shipping-icon"><img src="./assets/delivery.svg" alt=""></span>
-                You have <b id="free-shipping-amount">$35.40</b> until you qualify for free shipping
-            </div>
-            <!-- Product List -->
-            <div class="cart-product-list" id="cart-product-list">
-                <!-- Product Template (for JS population) -->
-                <div class="cart-product">
-                    <img src="placeholder_product.png" alt="Product Image" class="cart-product-image">
-                    <div class="cart-product-info">
-                        <span class="cart-product-brand"><!--Brand Name--></span>
-                        <span class="cart-product-name"><!--Product Name--></span>
-                        <div class=" number-input-field">
-                            <button class="cart-qty-btn"><img src="./assets/minus-grey.svg" alt=""></button>
-                            <input type="number" class="cart-qty-input " value="1" min="1"><!--this gets changed depending on hao many are put in-->
-                            <button class="cart-qty-btn"><img src="./assets/add-grey.svg" alt=""></button>
-                        </div>
-                    </div>
-                    <span class="cart-product-price"><!--price--></span>
-                    <button class="cart-product-remove" aria-label="Remove"><img src="./assets/cross.svg" alt=""></button>
-                </div>
-            </div>
-            <hr class="cart-divider">
-            <!-- Subtotal -->
-            <div class="cart-subtotal-row">
-                <span class="cart-subtotal-label">Subtotal</span>
-                <span class="cart-subtotal-value"><!--subtital price--></span> <!--JS-->
-            </div>
-            <!-- Gift Card / Coupon -->
-            <div class="cart-gift-coupon-row">
-                <span>Have a <a href="#" class="cart-gift-link">Gift Card</a> or <a href="#" class="cart-coupon-link">Coupon</a>?</span>
-            </div>
-            <!-- Shipping Select -->
-            <div class="cart-shipping-row">
-                <span class="cart-shipping-label">Shipping</span>
-                <select class="cart-shipping-select">
-                    <option value="">Select</option>
-                    <option value="">Flat rate $15.00</option>
-                    <option value="" disabled>Click & Collect</option>
-                </select>
-            </div>
-            <hr class="cart-divider">
-            <!-- Total -->
-            <div class="cart-total-row flexrow">
-                <span class="cart-total-label">Total</span>
-                <span class="cart-total-value">------</span> <!--gets changed once select flat rate-->
-            </div>
-            <!-- Checkout Button -->
-            <button class="cart-checkout-btn btn btn-primary btn-full">CHECKOUT</button>
         
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestiae mollitia perspiciatis nostrum dolore dicta, officia, maxime modi sit consectetur sunt tenetur ipsum dolor eius. Numquam ratione et nesciunt ullam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam modi molestias minima quam tempore cupiditate magnam dolore eius perferendis quos dolores temporibus, doloremque quod! Cumque obcaecati ea fuga minima?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias fugit impedit incidunt et perspiciatis, illo sapiente natus laboriosam officia ipsa expedita reiciendis, est possimus ratione temporibus explicabo repellendus qui.</p>
-            <p>placeholder</p>
-            <p>placeholder</p>
-            <p>placeholder</p>
-            <p>placeholder</p>
-            <p>placeholder</p>
-        
-           
-    </section>
+        <!-- Close Button -->
+        <div class="close-button-section">
+                    <button class="cart-close-btn btn" aria-label="Close Cart"><img src="./assets/cross.svg" alt=""></button>
+        </div>
 
+        <section class="cart-container-scrollable">
+       
+                <!-- Cart Title -->
+                <h1 class="cart-title">Shopping Cart (<span id="cart-count">0</span>)</h1>
+                <!-- Free Shipping Banner -->
+                <div class="cart-free-shipping-banner">
+                    <span class="cart-free-shipping-icon"><img src="./assets/delivery.svg" alt=""></span>
+                    You have <b id="free-shipping-amount">$35.40</b> until you qualify for free shipping
+                </div>
+                <!-- Product List -->
+                <div class="cart-product-list" id="cart-product-list">
+                    <!-- Product Template (for JS population) -->
+                    <div class="cart-product">
+                        <img src="placeholder_product.png" alt="Product Image" class="cart-product-image">
+                        <div class="cart-product-info">
+                            <span class="cart-product-brand"><!--Brand Name--></span>
+                            <span class="cart-product-name"><!--Product Name--></span>
+                            <div class=" number-input-field">
+                                <button class="cart-qty-btn"><img src="./assets/minus-grey.svg" alt=""></button>
+                                <input type="number" class="cart-qty-input " value="1" min="1"><!--this gets changed depending on hao many are put in-->
+                                <button class="cart-qty-btn"><img src="./assets/add-grey.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <span class="cart-product-price"><!--price--></span>
+                        <button class="cart-product-remove" aria-label="Remove"><img src="./assets/cross.svg" alt=""></button>
+                    </div>
+                </div>
+                <hr class="cart-divider">
+                <!-- Subtotal -->
+                <div class="cart-subtotal-row">
+                    <span class="cart-subtotal-label">Subtotal</span>
+                    <span class="cart-subtotal-value"><!--subtital price--></span> <!--JS-->
+                </div>
+                <!-- Gift Card / Coupon -->
+                <div class="cart-gift-coupon-row">
+                    <span>Have a <a href="#" class="cart-gift-link">Gift Card</a> or <a href="#" class="cart-coupon-link">Coupon</a>?</span>
+                </div>
+                <!-- Shipping Select -->
+                <div class="cart-shipping-row">
+                    <span class="cart-shipping-label">Shipping</span>
+                    <select class="cart-shipping-select">
+                        <option value="">Select</option>
+                        <option value="">Flat rate $15.00</option>
+                        <option value="" disabled>Click & Collect</option>
+                    </select>
+                </div>
+                <hr class="cart-divider">
+                <!-- Total -->
+                <div class="cart-total-row flexrow">
+                    <span class="cart-total-label">Total</span>
+                    <span class="cart-total-value">------</span> <!--gets changed once select flat rate-->
+                </div>
+                <!-- Checkout Button -->
+              
+                
+            
+               
+        </section> 
+        
+        <div class="checkout-button-section">
+            <button class="cart-checkout-btn btn btn-primary btn-full">CHECKOUT</button>
+            </div>
+    
+    </section>
     <!--Footer-->
     <footer>
         <div class="footer-image flexcolumn">

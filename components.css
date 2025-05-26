@@ -615,24 +615,44 @@ body.noscroll {
 
   /*shopping cart sidebar*/
   .cart-container{
-    position: absolute;
-    top: 77px;
-    right: 0;
-    
-    background-color: beige;
     width: 390px;
     height: calc(100vh - 77px);
+    position: fixed;
+    top: 77px;
+    right: 0;
     overflow-y: auto;
-
+    border: 1px solid var(--color-grey);
+  }
+  .cart-container-scrollable{
+    background-color: white;
+    height: 100%;
+    padding: 10px 10px 50px 10px;
   }
 
   .close-button-section{
     position: sticky;
     top: 0;
     background-color: white;
+    border-bottom: 1px solid var(--color-grey);
   }
-  .cart-checkout-btn{
+.cart-divider{
+    padding: 0;
+}
+  
+  .checkout-button-section{
+    position: sticky;
+    background-color: white;
+    bottom:0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 10px 20px 10px;
+  }
 
+  .checkout-button-section button{
+    padding: 10px;
+    
+    
   }
   @media (max-width: 820px) {
     .cart-container{
