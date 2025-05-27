@@ -1,4 +1,4 @@
-//function(){
+
   const filterBtn = document.getElementById("filterBtn");
 const overlay = document.getElementById("overlay");
 const popup = document.getElementById("bottomPopup");
@@ -15,8 +15,6 @@ const allProducts = document.querySelectorAll(".product-item");
 function updateApplyButton() {
   if (danielSmith.checked || mediumGrounds.checked) {
     applyFilter.disabled = false;
-  } else {
-    applyFilter.disabled = true;
   }
 }
 
@@ -55,9 +53,21 @@ applyFilter.addEventListener("click", () => {
     const isDS = product.classList.contains("ds");
     const isMedium = product.classList.contains("mg");
 
-    const show =
-      (!danielSmith.checked || isDS) &&
-      (!mediumGrounds.checked || isMedium);
+    let show = true;
+
+    if (danielSmith.checked && mediumGrounds.checked) {
+      // Show only products that are both ds and mg
+      show = isDS && isMedium;
+    } else if (danielSmith.checked) {
+      // Show only Daniel Smith products
+      show = isDS;
+    } else if (mediumGrounds.checked) {
+      // Show only Medium/Ground products
+      show = isMedium;
+    } else {
+      // Neither checked: show products that are NOT ds and NOT mg
+      show = allProducts;
+    }
 
     product.style.display = show ? "block" : "none";
   });
