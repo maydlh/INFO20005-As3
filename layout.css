@@ -532,6 +532,54 @@ h2.item-description-title, h2.item-related-title{
     margin-top: 10px;
 }
 
+@media (max-width: 820px){ /*checkout page*/
+    main.checkout-container {
+        
+        align-items: center;
+        margin: 0;
+        padding:10px;
+    }
+
+    button.view-order{
+        border: none;
+        padding: 0;
+    }
+
+    .checkout-heading{
+        align-items: baseline;
+    
+    }
+   
+    .checkout-main-grid{
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        width: 90%;
+    
+    }
+
+    .checkout-left, .checkout-right{
+
+        padding: var(--space-unit-half);
+        margin: auto;
+         margin-top: var(--space-unit);
+        height: fit-content;
+        width:95vw;
+    }
+
+
+
+    textarea{
+        resize: vertical;
+        max-width: 400px;
+        min-width: 250px;
+        min-height: 50px;
+        max-height: 150px;
+        
+    }
+
+}
+
 
 /*phone layout media query*/
 

@@ -141,6 +141,14 @@ button.view-order{
     padding: var(--space-unit-half);
 }
 
+@media (max-width: 820px){
+    button.view-order{
+        border: none;
+        padding: 0;
+    }
+   
+}
+
 /*fancy animation for input following the yt tutorial*/
 .checkout-row{
     position: relative;
