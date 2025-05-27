@@ -587,12 +587,14 @@ h2.item-description-title, h2.item-related-title{
     /*home screen*/
     .footer-content{
     display: grid;
-    grid-template-areas: 
-    "navigation contact" 
-    ". footer-logo";
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, auto);   /* 2 rows */
+    grid-template-areas:
+      "navigation contact contact contact"
+      ".          footer-logo footer-logo . ";
     white-space: wrap;
     }
-   
+
 
     #logo1{
         height: 45px;      
