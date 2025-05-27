@@ -1,4 +1,5 @@
-const filterBtn = document.getElementById("filterBtn");
+//function(){
+  const filterBtn = document.getElementById("filterBtn");
 const overlay = document.getElementById("overlay");
 const popup = document.getElementById("bottomPopup");
 const applyFilter = document.getElementById("applyFilter");
@@ -63,3 +64,5 @@ applyFilter.addEventListener("click", () => {
 
   closeFilter();
 });
+
+//}
