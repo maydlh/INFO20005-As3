@@ -643,12 +643,52 @@ h2.item-description-title, h2.item-related-title{
         height: 200px;
     }
 
-    
-    }
-
     .menu-item-hidden{
         /*display: none;*/
 
     }
 
+}
+
+/*confirmation page*/
+
+
+.confirmation-container{
+    justify-content: space-between;
+    height: calc(100vh - 70px);
+}
+
+main.confirmation-main{
+gap: var(--space-unit-2);
+}
+
+.confirmation-tick{
+    width: 145px;
+}
+
+.confirmation-main h1{
+    font-size: var(--font-size-xl);
+    font-family: var(--font-secondary);
+}
+
+.confirmation-main p{
+    margin-top: -20px;
+}
+
+.success-home-button, .success-order-detail{
+    padding: var(--space-unit-half);
+    width:236px;
+}
+
+.success-home-button{
+    margin-top: -25px;
+}
+@media (max-width: 820px) {
+    .confirmation-tick{
+        width: 95px;  
+    }
+
+    .confirmation-main h1{
+        font-size: var(--font-size-lg);
+    }
 }
