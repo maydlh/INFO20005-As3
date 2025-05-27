@@ -128,12 +128,15 @@ a.checkout-cancel{
     font-family: var(--font-tertiary), sans-serif;
     font-size: var(--font-size-reg);
     color: var(--color-tertiary);
+    
 }
 
 a.checkout-cancel:hover{
     color: var(--color-secondary);
 }
-
+a.checkout-cancel:visited{
+    color: var(--color-secondary);
+}
 button.view-order{
     padding: var(--space-unit-half);
 }
