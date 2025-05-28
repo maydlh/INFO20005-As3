@@ -28,8 +28,3 @@ a dark overlay outside of the cart popup*/
         resetCartIcon();
       }
     
- 
-
-
-   // overlay.classList.remove("active");
-   // overlay.classList.add("active");
