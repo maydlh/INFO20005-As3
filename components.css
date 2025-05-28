@@ -867,6 +867,20 @@ margin-top: var(--space-unit-half);
     .privacy-statement{
         font-size: 16px;
       }
+
+      .payment-detail{
+        margin: auto;
+         margin-top: var(--space-unit-2);
+        width: 90%;
+       
+        button.place-order{
+           margin-bottom: var(--space-unit);
+        }
+
+    } 
+    .checkout-payment-section{
+        padding: 10px;
+    }
    
 }
 
