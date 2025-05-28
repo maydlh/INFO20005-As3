@@ -825,12 +825,52 @@ margin-top: var(--space-unit-half);
   }
 
   /*checkout payment populate*/
-
-  ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
-::-webkit-datetime-edit-month-field:not([aria-valuenow]),
-::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
+.payment-detail{
+    margin: auto;
+     margin-top: var(--space-unit-2);
+    width: 395px;
+   
 }
+  .privacy-statement{
+    font-size: 18px;
+    margin-top: var(--space-unit-2);
+  }
+
+  .privacy-statement a, .privacy-statement a:visited{
+    color: var(--color-secondary);
+  }
+
+  button.place-order{
+    width: 100%;
+    height: 45px;
+   padding: 12px;
+   margin-top: var(--space-unit-4);
+  }
+
+.cvv-exp-container{
+    display: flex;
+    gap: var(--space-unit);
+
+}
+
+.cvv-exp-container input{
+    width: 105px;
+
+}
+
+  .not-robot{
+    width: 306px;
+    height: 80px;
+    margin-top: var(--space-unit);
+  }
+  @media (max-width: 820px){
+    .privacy-statement{
+        font-size: 16px;
+      }
+   
+}
+
+  
 
 
   

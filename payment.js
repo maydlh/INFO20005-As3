@@ -27,3 +27,27 @@ cvvInput.addEventListener('input', function () {
     this.value = this.value.replace(/\D/g, '').substring(0, 3);
 });
 
+
+//restrict date to mm/yy format
+
+const expiryInput = document.getElementById('expiry');
+
+expiryInput.addEventListener('input', function () {
+    let value = this.value.replace(/\D/g, ''); // remove non-digits
+
+    if (value.length === 0) {
+        this.value = '';
+    } else if (value.length < 3) {
+        // Add slash after 2 digits
+        this.value = value.length === 2 ? value + '/' : value;
+    } else {
+        // Format as MM/YY
+        this.value = value.slice(0, 2) + '/' + value.slice(2, 4);
+    }
+});
+
+
+//only enable the order button once all mandatory things are filled out
+
+applyFilter.disabled = false;
+

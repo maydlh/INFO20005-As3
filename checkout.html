@@ -23,7 +23,7 @@
             <h1 class="checkout-title">Checkout</h1>
             <button class="btn btn-secondary view-order" >View Order</button>
         </div>
-        <form class="checkout-form">
+        <form class="checkout-form" action="success.html" method="GET">
             <div class="checkout-main-grid">
                 <div class="checkout-left">
                     <!-- 1. Personal Detail -->
@@ -59,8 +59,9 @@
                         <h2>2. Shipping Address</h2>
                         <div class="checkout-row">
                             <select name="country" required>
+                                <option value="" disabled selected hidden>Country</option>
                                 <option value="">Australia</option>
-                                <option value="">New Zealand</option>
+                                <option value="" disabled>New Zealand</option>
                             </select>
                         </div>
                         <div class="checkout-row">
@@ -109,24 +110,30 @@
                         <div class="payment-detail">
 
                             <div class="checkout-row flexrow-nospace">
-                                <input type="text" name="card" maxlength="19" id="number" required inputmode="numeric" pattern="\d*">
+                                <input type="text" name="card" maxlength="19" id="number" required inputmode="numeric">
                                 <label class="placeholder">Card Number<span>*</span></label>
                             </div>
                             
-                            <div class="checkout-row flexrow-nospace">
-                                <input type="text" name="cvv" id="cvv" maxlength="3" required inputmode="numeric" pattern="\d{3}">
-                                <label class="placeholder">CVV <span>*</span></label>
-                            </div>
+                           <div class="cvv-exp-container">
+                                <div class="checkout-row flexrow-nospace">
+                                    <input type="text" name="cvv" id="cvv" maxlength="3" required inputmode="numeric" pattern="\d{3}">
+                                    <label class="placeholder">CVV <span>*</span></label>
+                                </div>
 
-                            <div class="checkout-row flexrow-nospace">
-                                <input type="number" name="expiry" maxlength="5" required placeholder="MM/YY">
-                                <label class="placeholder">Expiry <span>*</span></label>
-                            </div>
-                               
-                            <p>Your personal data will be used to process your order, support your experience throughout this website. and for other purposes described in our <a href="">privacy policy</a>.</p>
-                               <img src="./assets/not-robot.png" alt="I'm not a robot check">
+                                <div class="checkout-row flexrow-nospace">
+                                    <input type="text" name="expiry" id="expiry" maxlength="5" required inputmode="numeric" pattern="(0[1-9]|1[0-2])\/\d{2}">
+                                    <label class="placeholder">Expiry MM/YY<span>*</span></label>
+                                </div>
+                                
+                           </div>
+                           
+                            <p class="privacy-statement">Your personal data will be used to process your order, support your experience throughout this website. and for other purposes described in our <a href="">privacy policy</a>.</p>
 
-                               <a href="success.html" class="btn btn-primary">PLACE ORDER</a>
+                             <img src="./assets/not-robot.png" alt="I'm not a robot check" class="not-robot">
+
+                           
+                            <button class="btn btn-primary place-order" type="submit">PLACE ORDER</button>
+                            
                         </div>
                     </div>
                 </div>
