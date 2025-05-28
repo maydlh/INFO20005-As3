@@ -188,6 +188,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const freeShippingElem = document.getElementById('free-shipping-amount');
       const shippingSelect = document.querySelector('.cart-shipping-select'); // Get the shipping select element
       const flatRateOption = shippingSelect ? shippingSelect.querySelector('option[value="flat_rate"]') : null; // Get the flat rate option
+      const freeShippingOption = shippingSelect ? shippingSelect.querySelector('option[value="free"]') : null; // Get the free shipping option
+      const selectShippingOption = shippingSelect ? shippingSelect.querySelector('option[value="select"]') : null; // Get the initial select option
 
       if (!cartList) return;
 
@@ -242,25 +244,37 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      // Update shipping select and total
+      // Update shipping options and total based on eligibility
       let total = subtotal;
       console.log('Shipping Select Element:', shippingSelect); // Log the shipping select element
       console.log('Flat Rate Option Element:', flatRateOption); // Log the flat rate option element
+      console.log('Free Shipping Option Element:', freeShippingOption); // Log the free shipping option element
 
-      if (shippingSelect && flatRateOption) {
+      if (shippingSelect && flatRateOption && freeShippingOption) {
         if (subtotal >= freeShippingThreshold) {
           // Qualifies for free shipping
           console.log('Qualifies for free shipping'); // Log when free shipping is qualified
-          flatRateOption.textContent = 'Free Shipping';
-          flatRateOption.value = 'free';
+          flatRateOption.style.display = 'none'; // Hide flat rate option
+          flatRateOption.disabled = true;
+          freeShippingOption.style.display = ''; // Show free shipping option
+          freeShippingOption.disabled = false;
           shippingSelect.value = 'free'; // Automatically select free shipping
           total = subtotal;
         } else {
           // Does not qualify
           console.log('Does not qualify for free shipping'); // Log when free shipping is not qualified
-          flatRateOption.textContent = 'Flat rate $15.00';
-          flatRateOption.value = 'flat_rate';
-          // If flat rate is selected, add shipping cost
+          flatRateOption.style.display = ''; // Show flat rate option
+          flatRateOption.disabled = false;
+          freeShippingOption.style.display = 'none'; // Hide free shipping option
+          freeShippingOption.disabled = true;
+
+          // If the current selection is Free Shipping (from previously qualifying), reset selection to 'select'
+          if (shippingSelect.value === 'free' || shippingSelect.value === 'flat_rate') {
+               shippingSelect.value = 'select'; // Reset selected value to 'select'
+          }
+           // Removed the automatic default to flat_rate when starting with 'select'
+
+          // If flat rate is selected (manually by user), add shipping cost
           if (shippingSelect.value === 'flat_rate') {
             console.log('Flat rate selected, adding $15'); // Log when adding $15
             total += 15;
