@@ -13,9 +13,9 @@ const typeCount = document.getElementById("typeCount");
 const allProducts = document.querySelectorAll(".product-item");
 
 function updateApplyButton() {
-  if (danielSmith.checked || mediumGrounds.checked) {
-    applyFilter.disabled = false;
-  }
+  
+  applyFilter.disabled = false;
+  
 }
 
 function closeFilter() {
@@ -76,3 +76,38 @@ applyFilter.addEventListener("click", () => {
 });
 
 //}
+
+//new
+// Get both mobile and laptop checkboxes
+const danielSmithMobile = document.querySelector(".danielSmithMobile");
+const mediumGroundsMobile = document.querySelector(".mediumGroundsMobile");
+
+
+// Synchronize Daniel Smith checkbox
+if (danielSmithMobile && danielSmithLaptop) {
+  danielSmithMobile.addEventListener("change", () => {
+    danielSmithLaptop.checked = danielSmithMobile.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+  danielSmithLaptop.addEventListener("change", () => {
+    danielSmithMobile.checked = danielSmithLaptop.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+}
+
+// Synchronize Medium/Grounds checkbox
+if (mediumGroundsMobile && mediumGroundsLaptop) {
+  mediumGroundsMobile.addEventListener("change", () => {
+    mediumGroundsLaptop.checked = mediumGroundsMobile.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+  mediumGroundsLaptop.addEventListener("change", () => {
+    mediumGroundsMobile.checked = mediumGroundsLaptop.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+}
+  //new

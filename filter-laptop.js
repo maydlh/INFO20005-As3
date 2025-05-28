@@ -1,5 +1,6 @@
 const filterToggles = document.querySelectorAll(".filter-toggle");
 
+
 filterToggles.forEach(toggle => {
   toggle.addEventListener("click", () => {
     const parent = toggle.closest(".filter__group");
@@ -40,3 +41,39 @@ checkboxType.addEventListener("change", function () {
       }
     });
   });
+
+
+  //new
+// Get both mobile and laptop checkboxes
+
+const danielSmithLaptop = document.querySelector(".danielSmithLaptop");
+const mediumGroundsLaptop = document.querySelector(".mediumGroundsLaptop");
+
+// Synchronize Daniel Smith checkbox
+if (danielSmithMobile && danielSmithLaptop) {
+  danielSmithMobile.addEventListener("change", () => {
+    danielSmithLaptop.checked = danielSmithMobile.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+  danielSmithLaptop.addEventListener("change", () => {
+    danielSmithMobile.checked = danielSmithLaptop.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+}
+
+// Synchronize Medium/Grounds checkbox
+if (mediumGroundsMobile && mediumGroundsLaptop) {
+  mediumGroundsMobile.addEventListener("change", () => {
+    mediumGroundsLaptop.checked = mediumGroundsMobile.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+  mediumGroundsLaptop.addEventListener("change", () => {
+    mediumGroundsMobile.checked = mediumGroundsLaptop.checked;
+    // Optionally, call your filter logic here
+    // applyFilterLogic();
+  });
+}
+  //new
