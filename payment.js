@@ -47,7 +47,16 @@ expiryInput.addEventListener('input', function () {
 });
 
 
-//only enable the order button once all mandatory things are filled out
+//only populate credit card if the credit card option is selected
 
-applyFilter.disabled = false;
+const paymentMethod = document.getElementById('payment-method');
+const creditContainer = document.querySelector(".payment-detail");
+
+paymentMethod.addEventListener('change', function () {
+    if (this.value === 'credit-card') {
+        creditContainer.style.display = 'block';
+    } else {
+        creditContainer.style.display = 'none';
+    }
+});
 

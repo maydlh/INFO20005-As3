@@ -829,6 +829,7 @@ margin-top: var(--space-unit-half);
     margin: auto;
      margin-top: var(--space-unit-2);
     width: 395px;
+    display: none;
    
 }
   .privacy-statement{
@@ -875,9 +876,15 @@ margin-top: var(--space-unit-half);
        
         button.place-order{
            margin-bottom: var(--space-unit);
+           margin-top: var(--space-unit-2);
         }
 
     } 
+
+    .not-robot{
+        
+        margin-top: var(--space-unit-2);
+      }
     .checkout-payment-section{
         padding: 10px;
     }
