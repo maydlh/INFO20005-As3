@@ -1,5 +1,5 @@
 
-  const filterBtn = document.getElementById("filterBtn");
+const filterBtn = document.getElementById("filterBtn");
 const overlay = document.getElementById("overlay");
 const popup = document.getElementById("bottomPopup");
 const applyFilter = document.getElementById("applyFilter");
@@ -78,10 +78,7 @@ applyFilter.addEventListener("click", () => {
 
 
 
-// Get both mobile and laptop checkboxes
-const danielSmithMobile = document.querySelector(".danielSmithMobile");
-const mediumGroundsMobile = document.querySelector(".mediumGroundsMobile");
-
+// Get both mobile and laptop checkboxes, as defined in filter-laptop
 
 // Synchronize Daniel Smith checkbox
 if (danielSmithMobile && danielSmithLaptop) {

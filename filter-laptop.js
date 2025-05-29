@@ -47,7 +47,8 @@ checkboxType.addEventListener("change", function () {
 
 const danielSmithLaptop = document.querySelector(".danielSmithLaptop");
 const mediumGroundsLaptop = document.querySelector(".mediumGroundsLaptop");
-
+const danielSmithMobile = document.querySelector(".danielSmithMobile");
+const mediumGroundsMobile = document.querySelector(".mediumGroundsMobile");
 // Synchronize Daniel Smith checkbox
 if (danielSmithMobile && danielSmithLaptop) {
   danielSmithMobile.addEventListener("change", () => {

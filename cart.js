@@ -273,32 +273,49 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log('Shipping Select Element:', shippingSelect); // Log the shipping select element
       console.log('Flat Rate Option Element:', flatRateOption); // Log the flat rate option element
 
-      if (shippingSelect && flatRateOption) {
-        if (subtotal >= freeShippingThreshold) {
-          // Qualifies for free shipping
-          console.log('Qualifies for free shipping'); // Log when free shipping is qualified
-          flatRateOption.textContent = 'Free Shipping';
-          flatRateOption.value = 'free';
-          shippingSelect.value = 'free'; // Automatically select free shipping
-          total = subtotal;
-        } else {
-          // Does not qualify
-          console.log('Does not qualify for free shipping'); // Log when free shipping is not qualified
-          // Reset option text and value if they were changed to Free Shipping
-          if (flatRateOption.value === 'free') {
-              flatRateOption.textContent = 'Flat rate $15.00';
-              flatRateOption.value = 'flat_rate';
-              // If Free Shipping was selected, reset to the default or flat rate option
-              if (shippingSelect.value === 'free') {
-                  shippingSelect.value = 'flat_rate'; 
-              }
+      if (shippingSelect) {
+        const freeOption = shippingSelect.querySelector('option[value="free"]');
+        const selectOption = shippingSelect.querySelector('option[value="select"]');
+        const flatRateOptionElement = shippingSelect.querySelector('option[value="flat_rate"]');
+
+        // Manage free shipping option based on subtotal
+        if (freeOption && selectOption) {
+          if (subtotal >= freeShippingThreshold) {
+            // Qualifies for free shipping
+            console.log('Qualifies for free shipping - enabling and selecting free option');
+            freeOption.disabled = false; // Enable the free shipping option
+                // Only set value to 'free' if it's not already 'flat_rate'
+                if (shippingSelect.value !== 'flat_rate') {
+            shippingSelect.value = 'free'; // Automatically select free shipping
+                }
+          } else {
+            // Does not qualify
+            console.log('Does not qualify for free shipping - disabling free option and selecting select');
+            freeOption.disabled = true; // Disable the free shipping option
+                // Only set value to 'select' if it's not already 'flat_rate'
+                 if (shippingSelect.value !== 'flat_rate') {
+            shippingSelect.value = 'select'; // Ensure "Select" is the default selected option
           }
-          // If flat rate is selected, add shipping cost
-          if (shippingSelect.value === 'flat_rate') {
-            console.log('Flat rate selected, adding $15'); // Log when adding $15
-            total += 15;
-          }
+            }
         }
+
+        // Ensure flat rate option is never disabled by the script
+        if (flatRateOptionElement) {
+          flatRateOptionElement.disabled = false; // Keep flat rate option enabled
+        }
+
+        // Calculate total based on the selected shipping option AFTER managing selections
+        if (shippingSelect.value === 'flat_rate') {
+           console.log('Flat rate selected, adding $15');
+           total += 15;
+        } else if (shippingSelect.value === 'free') {
+           console.log('Free shipping selected, total is subtotal');
+           // Total is already subtotal, no change needed
+        } else if (shippingSelect.value === 'select') {
+           console.log('Select shipping option chosen, total is subtotal');
+           // Total is already subtotal, no change needed
+        }
+        // If any other option was somehow selected, total remains subtotal. Add logic here if needed for other shipping options.
       }
 
       if (totalElem) totalElem.textContent = total > 0 ? `$${total.toFixed(2)}` : '------';
@@ -307,6 +324,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Enable/disable checkout button based on shipping selection
       const checkoutButton = document.querySelector('.cart-checkout-btn');
       if (checkoutButton) {
+          // Enable checkout only if a valid shipping option (not 'select') is chosen
           if (shippingSelect && shippingSelect.value && shippingSelect.value !== 'select') {
               checkoutButton.disabled = false;
               checkoutButton.classList.remove('disabled'); 
@@ -393,6 +411,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add event listener for shipping select changes
     const shippingSelectElement = document.querySelector('.cart-shipping-select');
     if (shippingSelectElement) {
+        // Ensure the listener only adds $15 when flat_rate is chosen
+        shippingSelectElement.removeEventListener('change', updateCartUI); // Remove previous listener to avoid duplicates
         shippingSelectElement.addEventListener('change', updateCartUI); // Recalculate total when shipping changes
         console.log('Shipping select change listener added'); // Log when listener is added
     }
