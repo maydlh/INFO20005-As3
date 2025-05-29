@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cartContainer = document.querySelector(".cart-container");
     const cartIconDefault = 'assets/cart.svg';
     const overlayCart = document.getElementById("overlay-cart");
-    const popupOverlay = document.getElementById("overlay"); // Get the specific overlay for the popup
+    const popupOverlay = document.getElementById("overlay-quantity-popup"); // Get the specific overlay for the popup
 
     function resetCartIcon() {
         cartIcon.src = cartIconDefault; // reset to regular cart icon
@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     window.openCart = function() {
         cartIcon.src = cartIconActive; // change to pink icon
         cartContainer.classList.add("active");
-        document.body.classList.add("noscroll");
         overlayCart.classList.add("active");
+        document.body.classList.add("noscroll");
+        
+
     }
     window.closeCart = function() {
         cartContainer.classList.remove("active");
@@ -108,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (popupOverlay) {
             popupOverlay.classList.add('active');
         }
-        document.body.classList.add("noscroll"); // Prevent scrolling
+        document.body.classList.add("quantity-popup-noscroll"); // Prevent scrolling
       });
     });
 
@@ -147,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (popupOverlay) {
           popupOverlay.classList.remove('active');
       }
-      document.body.classList.remove("noscroll"); // Re-enable scrolling
+      document.body.classList.remove("quantity-popup-noscroll"); // Re-enable scrolling
     });
 
     // When popup "Add to Cart" button is clicked

@@ -424,7 +424,7 @@ nav.breadcrumbs-mobile{
     background: var(--color-grey-light);
   }
 
-  .overlay, .overlay-cart {
+  .overlay, .overlay-cart, .overlay-quantity-popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -433,9 +433,11 @@ nav.breadcrumbs-mobile{
     background: rgba(0,0,0,0.5);
     display: none;
     z-index: 999;
+    height: 100%;
   }
 
-  .overlay.active, .overlay-cart.active{
+
+  .overlay.active, .overlay-cart.active, .overlay-quantity-popup.active{
     display: block;
   }
 
@@ -878,9 +880,13 @@ margin-top: var(--space-unit-half);
 
   
 .noscroll {
-    overflow: hidden;
+  overflow: hidden;
+  height: 100vh;
 }
 
+.quantity-popup-noscroll{
+  overflow: hidden;
+}
   
 
 
