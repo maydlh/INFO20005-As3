@@ -189,6 +189,18 @@ document.addEventListener("DOMContentLoaded", function () {
       popupAddToCartBtn.disabled = true;
     });
 
+    // Add event listener to the checkout form for clearing the cart on submission
+    const checkoutForm = document.querySelector('.checkout-form');
+    if (checkoutForm) {
+        checkoutForm.addEventListener('submit', function() {
+            // Clear the cart from localStorage
+            localStorage.removeItem("cart");
+            // Reset the cart count display
+            updateCartCount();
+            // Note: The form will still submit and redirect to success.html
+        });
+    }
+
     // --- Cart Drawer UI Logic (from trial-cart.js) ---
     function updateCartUI() {
       console.log('updateCartUI called'); // Log when the function is called
