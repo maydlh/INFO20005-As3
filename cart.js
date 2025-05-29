@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cartContainer = document.querySelector(".cart-container");
     const cartIconDefault = 'assets/cart.svg';
     const overlayCart = document.getElementById("overlay-cart");
+    const popupOverlay = document.getElementById("overlay"); // Get the specific overlay for the popup
 
     function resetCartIcon() {
         cartIcon.src = cartIconDefault; // reset to regular cart icon
@@ -104,8 +105,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (popupQtyInput) popupQtyInput.value = 1;
 
         // Show the overlay and prevent scrolling
-        if (overlayCart) {
-            overlayCart.classList.add('active');
+        if (popupOverlay) {
+            popupOverlay.classList.add('active');
         }
         document.body.classList.add("noscroll"); // Prevent scrolling
       });
@@ -143,8 +144,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (closeBtn) closeBtn.addEventListener("click", function () {
       popup.classList.add("hidden");
       // Hide the overlay and re-enable scrolling
-      if (overlayCart) {
-          overlayCart.classList.remove('active');
+      if (popupOverlay) {
+          popupOverlay.classList.remove('active');
       }
       document.body.classList.remove("noscroll"); // Re-enable scrolling
     });
