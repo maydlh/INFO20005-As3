@@ -1,8 +1,3 @@
-// hamburger menu 
-
-
-
-
 //menu in shop in laptop
 
 // All clickable buttons

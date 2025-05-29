@@ -108,15 +108,7 @@ div.sort-by > select{
     gap: 10px;
     height: 40px;
 }
-/*cart icon in nav
-#bag-icon{
-   background-image: url('./assets/cart.svg'); 
-}
 
-#bag-icon.active{
-  background-image: url('./assets/cart-pink.svg');
-}
-*/
 .add-cart-icon{
     width: 20px;
 }
@@ -204,7 +196,7 @@ select:valid {
 }
 
 input[type="checkbox"] {
-    accent-color: var(--color-secondary); /* chance checkmark to pink */
+    accent-color: var(--color-secondary); /* change checkmark to pink */
 }
 
 textarea{
@@ -357,13 +349,13 @@ li[class *="all"] > a:hover{
 
 
 .shop-menu-mobile, .painting-menu-mobile, .watercolour-menu-mobile{
-    display: none ; /*change this to none*/
+    display: none ; 
     
 }
 
 .shop-menu-mobile.active, .painting-menu-mobile.active ,.watercolour-menu-mobile.active{
 display: block;
-position: absolute ; /*change this to absolute*/
+position: absolute ; 
     background-color: var(--color-tertiary);
     z-index: 10;
     width: 100%;
@@ -565,7 +557,6 @@ body.noscroll {
 
   .quantity-popup-content img {
     max-width: 100%;     /* Ensures image doesn't overflow popup width */
-    /*max-height: 200px;  */ 
     display: block;
     margin: 0 auto; /* Center the image and add spacing */
     object-fit: contain; /* Prevent distortion */
@@ -686,7 +677,7 @@ body.noscroll {
     z-index: 1;
     width: 100%;
     padding: 0 10px 20px 10px;
-    
+
     button{
     padding: 10px;
   } 

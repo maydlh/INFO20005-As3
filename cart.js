@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
               flatRateOption.value = 'flat_rate';
               // If Free Shipping was selected, reset to the default or flat rate option
               if (shippingSelect.value === 'free') {
-                  shippingSelect.value = 'flat_rate'; // or 'select' if that's the desired default
+                  shippingSelect.value = 'flat_rate'; 
               }
           }
           // If flat rate is selected, add shipping cost
@@ -294,10 +294,10 @@ document.addEventListener("DOMContentLoaded", function () {
       if (checkoutButton) {
           if (shippingSelect && shippingSelect.value && shippingSelect.value !== 'select') {
               checkoutButton.disabled = false;
-              checkoutButton.classList.remove('disabled'); // Assuming you have a disabled class for styling
+              checkoutButton.classList.remove('disabled'); 
           } else {
               checkoutButton.disabled = true;
-              checkoutButton.classList.add('disabled'); // Assuming you have a disabled class for styling
+              checkoutButton.classList.add('disabled'); 
           }
       }
 
@@ -382,5 +382,5 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('Shipping select change listener added'); // Log when listener is added
     }
 
-    // Also call updateCartUI() after any add-to-cart action elsewhere in your code.
+
 });

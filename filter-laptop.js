@@ -43,7 +43,6 @@ checkboxType.addEventListener("change", function () {
   });
 
 
-  //new
 // Get both mobile and laptop checkboxes
 
 const danielSmithLaptop = document.querySelector(".danielSmithLaptop");
@@ -53,13 +52,11 @@ const mediumGroundsLaptop = document.querySelector(".mediumGroundsLaptop");
 if (danielSmithMobile && danielSmithLaptop) {
   danielSmithMobile.addEventListener("change", () => {
     danielSmithLaptop.checked = danielSmithMobile.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+    
   });
   danielSmithLaptop.addEventListener("change", () => {
     danielSmithMobile.checked = danielSmithLaptop.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+   
   });
 }
 
@@ -67,13 +64,10 @@ if (danielSmithMobile && danielSmithLaptop) {
 if (mediumGroundsMobile && mediumGroundsLaptop) {
   mediumGroundsMobile.addEventListener("change", () => {
     mediumGroundsLaptop.checked = mediumGroundsMobile.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+   
   });
   mediumGroundsLaptop.addEventListener("change", () => {
     mediumGroundsMobile.checked = mediumGroundsLaptop.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+   
   });
 }
-  //new

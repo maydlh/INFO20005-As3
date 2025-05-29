@@ -606,9 +606,6 @@ h2.item-description-title, h2.item-related-title{
         
     }
 
-    /*nav > ul > li{
-        display: none;
-    }*/
     .nav-cart{
         justify-content: flex-start;
     }
@@ -644,12 +641,6 @@ h2.item-description-title, h2.item-related-title{
     .header-image{
         height: 200px;
     }
-
-    .menu-item-hidden{
-        /*display: none;*/
-
-    }
-
 }
 
 /*confirmation page*/

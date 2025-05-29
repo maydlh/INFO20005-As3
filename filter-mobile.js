@@ -65,7 +65,7 @@ applyFilter.addEventListener("click", () => {
       // Show only Medium/Ground products
       show = isMedium;
     } else {
-      // Neither checked: show products that are NOT ds and NOT mg
+      // Neither checked: show all watercolour
       show = allProducts;
     }
 
@@ -75,9 +75,9 @@ applyFilter.addEventListener("click", () => {
   closeFilter();
 });
 
-//}
 
-//new
+
+
 // Get both mobile and laptop checkboxes
 const danielSmithMobile = document.querySelector(".danielSmithMobile");
 const mediumGroundsMobile = document.querySelector(".mediumGroundsMobile");
@@ -87,13 +87,11 @@ const mediumGroundsMobile = document.querySelector(".mediumGroundsMobile");
 if (danielSmithMobile && danielSmithLaptop) {
   danielSmithMobile.addEventListener("change", () => {
     danielSmithLaptop.checked = danielSmithMobile.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+    
   });
   danielSmithLaptop.addEventListener("change", () => {
     danielSmithMobile.checked = danielSmithLaptop.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+    
   });
 }
 
@@ -101,13 +99,11 @@ if (danielSmithMobile && danielSmithLaptop) {
 if (mediumGroundsMobile && mediumGroundsLaptop) {
   mediumGroundsMobile.addEventListener("change", () => {
     mediumGroundsLaptop.checked = mediumGroundsMobile.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+    
   });
   mediumGroundsLaptop.addEventListener("change", () => {
     mediumGroundsMobile.checked = mediumGroundsLaptop.checked;
-    // Optionally, call your filter logic here
-    // applyFilterLogic();
+    
   });
 }
-  //new
+
