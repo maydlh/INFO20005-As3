@@ -41,7 +41,6 @@ nav {
 }
 
 
-
 nav > ul{    
     width: 100%;
     max-width: 30vw;
@@ -173,6 +172,10 @@ section.about > p.heading{
 .contact-info-container{
     gap: 50px;
     align-items: flex-start;
+    div[class *="contact-info"] li{
+        display: flex;
+        align-items: center;
+    }
 }
 
 footer li, footer p{
